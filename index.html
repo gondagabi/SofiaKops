@@ -34,13 +34,14 @@ h1 {font-weight: 200; font-size: calc(1.2rem + 1vw); padding: 1rem;}
 
 /*HELPER COLOR*/
 header {
-  background-color: rgb(81, 141, 141);
+  
 }
 
 /*ID- styles*/
 #tagline {
   margin-bottom: 1rem;
-  position: absolute;
+  text-align: center;
+  text-shadow:1px 1px #b865a0;
 }
 
 /* Create a Parallax Effect */
@@ -84,6 +85,10 @@ header {
   }
 }
 
+#about{
+  background: url("/");
+}
+
 
 
 </style>
@@ -96,7 +101,7 @@ header {
 <!-- Navbar (sit on top) -->
 <div class="top card theme-l4">
     <div class="bar" id="myNavbar">
-      <a class="bar-item button hover-orchid-d5 hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <a class="bar-item button hover-nav-tulip hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
           <a href="#home" class="bar-item button">HOME</a>
@@ -121,17 +126,26 @@ header {
 <header>
     <div class="opacity-min" id="home"> <!--OPACITY ON IMAGE - MAYBE NOT-->
         <img class="bgimg-1" src="/image/hero-chichago.webp" alt="Cloud Gate">
-        <div id="tagline" class=" theme-l5 opacity-mid wide animate-opacity red"><h1>SOFIA KOPS PHOTOGRAPHY</h1></div>
+        <div id="tagline" class="wide"><h1>SOFIA KOPS PHOTOGRAPHY</h1></div>
     </div>
 </header>
 
   <!-- Container (About Section) -->
-<div class="content container padding-64" id="about">
-  <h3 class="center">ABOUT ME</h3>
-  <p class="center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="content container padding-32 eighty center" id="about">
+    <h2 class="center">ABOUT ME</h2>
+    <h3 class="center"><em>I love photography, I love people.</em></h3>
+       <p class="padding-16">Welcome to my page!</p><br>
+        My name is Zsofia Kops (pronounce: Sofia), born and raised in Budapest, Hungary, currently living in the suburbs of Chicago. 
+        I am quite a traveler ever since in my teenage years and thankful to this, during an overseas trip I met my (now) husband who is my Nr 1 supporter. We have a baby girl and 2 dogs.
+        <p class="padding-16">I started photography with snapping photos during our adventures around the world and capturing sweet family moments on get togethers.</p>
+        <p class="padding-16">I have a passion for creating memories through photography and turned this passion into a business.</p>
+        <p class="padding-16">Ready for your a photo session? Book yours today or contact me if you have any question.</p>
+        <p class="padding-16">Zsofia Kops</p>
+    </div>
+    
+    
+    
+   
   <div class="row">
     <div class="col m6 center padding-large">
       <p><b><i class="fa fa-user margin-right"></i>My Name</b></p><br>
