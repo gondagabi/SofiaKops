@@ -254,7 +254,7 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 /*GG ADDED STYLE - IMPORTANT TO PUT THE MAIN STYLESHEET*/
 .nowrap{white-space: nowrap} /*nem engedi a sortörést - kis képernyőn sem - nem responsive*/
 .display-relative{position: relative} 
-
+.eighty{display: block; width: 80%}
 
 
 
@@ -302,6 +302,7 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .text-theme-tulip {color:#c79ebb !important}
 .border-theme-tulip {border-color:#c79ebb !important}
 
+.hover-nav-tulip{color: #fff !important; background-color: #714163;}
 .hover-theme-tulip:hover {color:#000 !important; background-color:#c79ebb !important}
 .hover-text-theme-tulip:hover {color:#c79ebb !important}
 .hover-border-theme-tulip:hover {border-color:#c79ebb !important}
