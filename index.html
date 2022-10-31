@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<title>Sofia Kops Photography</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="gg-ss-sofia.css">
-<script src="/gg-js.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Josefin+Slab:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Quicksand:wght@300;400;600&family=Raleway:ital,wght@0,400;0,600;0,800;1,200&family=Text+Me+One&display=swap" rel="stylesheet">
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sofia Kops Photography</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="gg-ss-sofia.css">
+  <script src="/gg-js.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Josefin+Slab:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Quicksand:wght@300;400;600&family=Raleway:ital,wght@0,400;0,600;0,800;1,200&family=Text+Me+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
 <!--font-family: 'Arizonia', cursive;
 font-family: 'Josefin Slab', serif;
 font-family: 'Quicksand', sans-serif;
@@ -98,7 +100,7 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
 
 
 </style>
-</head>
+
 
 
 <body>
@@ -180,37 +182,36 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
 <!-- Container (Portfolio Section) -->
 <div class="content container padding-64" id="portfolio">
   <h3 class="center">MY PROFILE??</h3>
- 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="row-padding center">
-    <div class="col s3">
-      <img src="/w3images/p1.jpg" style="width:100%">
-      <h5>Food photography</h5>
+ <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="row-padding center">
+        <div class="col m3">
+          <span class="material-symbols-outlined colored-ico ">diversity_1</span>
+          <h5>Family photography indoor and outdoor</h5>
+          <p class="small">Photos even in studio or in the nature with thematic scenery?? are always marvelous</p>
+        </div>
+        
+        <div class="col m3">
+          <img src="/icons/cake_FILL0_wght400_GRAD0_opsz48.svg" style="width:15%">
+          <h5>Food photography</h5>
+          <p class="small">A perfect service for restaurants to represent their dishes online</p>
+        </div>
+
+        <div class="col m3">
+          <img src="icons/face_4_FILL0_wght400_GRAD0_opsz48.svg" style="width:15%">
+          <h5>Portrait photography</h5>
+          <p class="small">Artistic photoshots is great present for your loved ones, or your business resume</p>
+        </div>
+
+        <div class="col m3">
+          <img src="/icons/local_bar_FILL0_wght400_GRAD0_opsz48.svg" style="width:15%">
+          <h5>Event photography</h5>
+          <p class="small">I take photos at any event from wedding to business conference</p>
+        </div>
+
     </div>
 
-    <div class="col s3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="col s3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="col s3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
-    </div>
   </div>
 
-  </div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="modal black" onclick="this.style.display='none'">
-  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="modal-content animate-zoom center transparent padding-64">
-    <img id="img01" class="image">
-    <p id="caption" class="opacity large"></p>
-  </div>
-</div>
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 display-container opacity-min">
@@ -343,3 +344,11 @@ function toggleFunction() {
 </div>
 </div>
 
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
