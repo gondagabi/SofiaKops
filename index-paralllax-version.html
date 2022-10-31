@@ -20,10 +20,11 @@ font-family: 'Text Me One', sans-serif;-->
 /*GENERAL RULES*/
 *General rules*/
 *{box-sizing:border-box;}
- html,body{box-sizing: border-box!important;width: 100%;height: 100%; overflow-x:hidden;
+ html,body{box-sizing: border-box!important;width: 100%;height: 100%;
+    line-height: 1.8;
     color:#000 !important; background-color:#f6f5f4 !important;
     font-size: calc(.6rem + 1vw);
-    line-height: 1.8;
+    overflow-x:hidden;
  }
 /*end*/
 
@@ -42,17 +43,8 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
   text-align: center;
   text-shadow:1px 1px #b865a0;
   font-family: 'Josefin Slab', serif;
-  font-size: calc(.4rem + 1vw); padding: 1rem;
-  letter-spacing:0.3rem;
-  padding: .1rem;
-   
+    
 }
-@media (min-width:601px){
-  #tagline {
-    font-size: calc(1.3rem + 1vw); padding: 1rem;
-    letter-spacing: 0.6rem;
-  }}
-
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -66,7 +58,7 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
 .bgimg-1 {
   width: 100%;
   
-   }
+ }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
@@ -132,7 +124,7 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
 <header id="home" class="zero-topbot">
      <!--OPACITY ON IMAGE - MAYBE NOT-->
         <img class="bgimg-1" src="/image/hero-chichago.webp" alt="Cloud Gate">
-        <div id="tagline" class="strech center theme-d5 opacity-mid padding-small">SOFIA KOPS PHOTOGRAPHY</div>
+        <div id="tagline" class="strech center wide theme-d4 opacity-min padding-8">SOFIA KOPS PHOTOGRAPHY</div>
  
 </header>
 
@@ -147,7 +139,7 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
         <p class="padding-16">I started photography with snapping photos during our adventures around the world and capturing sweet family moments on get togethers.</p>
         <p class="padding-16">I have a passion for creating memories through photography and turned this passion into a business.</p>
         <p class="padding-16">Ready for your a photo session? Book yours today or contact me if you have any question.</p>
-        <p class="padding-16 sign">Zsofia Kops</p>
+        <p class="padding-16">Zsofia Kops</p>
     </div>
 </div>
     
@@ -155,17 +147,17 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
  <div class="row center dark-grey padding-8">
   <div class="third section">
     <p><i class="fa fa-user"></i></p>
-    <span class="xlarge">100+</span><br>
-    Clients
+    <span class="xlarge">14+</span><br>
+    Partners
   </div>
   <div class="third section">
     <p><i class="fa fa-check"></i></p>
-    <span class="xlarge">2000+</span><br>
-    Photoshot done
+    <span class="xlarge">55+</span><br>
+    Projects Done
   </div>
   <div class="third section">
     <p><i class="fa fa-smile-o"></i></p>
-    <span class="xlarge">500+</span><br>
+    <span class="xlarge">89+</span><br>
     Happy Clients
   </div>
  </div>
@@ -179,29 +171,47 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
 
 <!-- Container (Portfolio Section) -->
 <div class="content container padding-64" id="portfolio">
-  <h3 class="center">MY PROFILE??</h3>
- 
+  <h3 class="center">MY WORK</h3>
+  <p class="center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="row-padding center">
-    <div class="col s3">
-      <img src="/w3images/p1.jpg" style="width:100%">
-      <h5>Food photography</h5>
+    <div class="col m3">
+      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
     </div>
 
-    <div class="col s3">
+    <div class="col m3">
       <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
     </div>
 
-    <div class="col s3">
+    <div class="col m3">
       <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
     </div>
 
-    <div class="col s3">
+    <div class="col m3">
       <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
     </div>
   </div>
 
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
+    </div>
+
+    <div class="col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+    </div>
+    <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
+</div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="modal black" onclick="this.style.display='none'">
@@ -303,43 +313,3 @@ function toggleFunction() {
 </div>
 </body>
 </html>
-
- <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
- <div class="row-padding center">
-  <div class="col m3">
-    <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
-  </div>
-
-  <div class="col m3">
-    <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
-  </div>
-
-  <div class="col m3">
-    <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
-  </div>
-
-  <div class="col m3">
-    <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
-  </div>
-</div>
-
-<div class="row-padding center section">
-  <div class="col m3">
-    <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
-  </div>
-
-  <div class="col m3">
-    <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
-  </div>
-
-  <div class="col m3">
-    <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
-  </div>
-
-  <div class="col m3">
-    <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
-  </div>
-  <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
-</div>
-</div>
-

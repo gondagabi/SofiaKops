@@ -77,16 +77,18 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
 
-html,body{font-family: Raleway,sans-serif;font-size:1rem;line-height:1.5}html{overflow-x:hidden}
+html,body{font-size:1rem;} html{overflow-x:hidden}
 
-h1{font-size: calc(1.2rem + 1vw);padding: 1rem;}
-h2{font-size: calc(.9rem + 1vw);padding: 1rem;}
-h3{font-size: calc(.85rem + 1vw); font: weight 700; ;padding: .5rem;}
-h4{font-size: calc(.8rem + 1vw);font-weight:700;padding:.5rem}
-h5{font-size: calc(.75rem + 1vw);}
-h6{font-size: calc(.7rem + 1vw);font-weight: bolder;}
+html, body,h5,h6 {font-family: 'Raleway', Arial,  sans-serif;}
+h1,h2,h3 {font-family: 'Josefin Slab' , serif}
+h1 {font-weight: 300; font-size: calc(1.3rem + 1vw); padding: 1rem;}
+h2 {font-weight: 200; font-size: calc(1.1rem + 1vw); padding: 1rem;}
+h3 {font-weight: 200; font-size: calc(.9rem + 1vw); padding: 1rem;}
+h4 {font-weight: 200; font-size: calc(.6rem + 1vw); padding: 1rem;}
+h5{font-size: calc(.6rem + 1vw);}
+h6{font-size: calc(.5rem + 1vw);font-weight: bold;}
 
-.wide{letter-spacing:0.1rem;}
+.wide1{letter-spacing:0.6rem;}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 /*Table*/ /*.table - Container for an HTML table , .striped-striped table, .border-bordered table, .bordered-bordered lines, .centered-centered table content, .hoverable-hoverable table, .table-all-all properties set */
@@ -239,7 +241,7 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .section,.code{margin-top:16px!important;margin-bottom:16px!important}
 .margin{margin:16px!important}.margin-top{margin-top:16px!important}.margin-bottom{margin-bottom:16px!important}
 .margin-left{margin-left:16px!important}.margin-right{margin-right:16px!important}
-.padding-small{padding:4px 8px!important}.padding{padding:8px 16px!important}.padding-large{padding:12px 24px!important}
+.padding-small{padding:.01rem .015rem!important}.padding{padding:8px 16px!important}.padding-large{padding:12px 24px!important}
 .padding-8{padding-top:8px!important;padding-bottom:8px!important}.padding-16{padding-top:16px!important;padding-bottom:16px!important}.padding-24{padding-top:24px!important;padding-bottom:24px!important}
 .padding-32{padding-top:32px!important;padding-bottom:32px!important}.padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .padding-64{padding-top:64px!important;padding-bottom:64px!important}
@@ -251,13 +253,23 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .transparent,.hover-none:hover{background-color:transparent!important}
 .hover-none:hover{box-shadow:none!important}
 
+
 /*GG ADDED STYLE - IMPORTANT TO PUT THE MAIN STYLESHEET*/
 .nowrap{white-space: nowrap} /*nem engedi a sortörést - kis képernyőn sem - nem responsive*/
+.wrap{white-space:initial;}
 .display-relative{position: relative} 
 .eighty{display: block; width: 80%}
 .seventy{display: block; width: 70%}
 .hundred{display: block; width: 100%}
 .zero-topbot{padding-top: 0;padding-bottom: 0;margin-top: 0;margin-bottom: 0;}
+/*FONTS*/
+.sofia {font-family: Sofia, cursive;} /*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">*/
+.tangerine {font-family: Tangerine, serif;} /* <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">*/
+.lobster {font-family: Lobster, serif;} /*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">*/
+.arizonia {font-family: 'Arizonia', cursive;}
+.sign {font-family: 'Arizonia', cursive; font-size: calc(1.4rem + 1vw);padding: 1rem;}
+
+
 
 
 
@@ -424,12 +436,92 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .border-dark-grey,.hover-border-dark-grey:hover,.border-dark-gray,.hover-border-dark-gray:hover{border-color:#616161!important}
 .border-pale-red,.hover-border-pale-red:hover{border-color:#ffe7e7!important}.border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}.border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
-/*FONTS*/
-.sofia {font-family: Sofia, cursive;} /*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">*/
-.tangerine {font-family: Tangerine, serif;} /* <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">*/
-.lobster {font-family: Lobster, serif;} /*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">*/
 
 
+
+/*THE 3 COLUMN LAYOUT*/
+.column-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex: 33.3%;
+	text-align: center;
+	justify-content: space-around;
+	flex-grow: 1;
+	}
+  .column-wrapper > .loc-column {
+	display: flex;
+	float: left;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	flex-grow: 1;
+  }
+  .loc-column img {
+	padding: 2%;
+	justify-content: space-around;
+	width: calc(12vw + .1vw);
+	padding-top: 2%;
+	Padding-bottom: 2%;
+	}
+  
+  /* Responsive layout - makes a one column-layout instead of three columns */
+  @media screen and (max-width: 900px) {
+	  .column-wrapper {
+		 flex: 100%;
+		 flex-direction: column;
+		 text-align: center;
+	}
+	  .loc-column img {
+		   justify-content: space-around;
+		   align-items: center;
+   }
+  }
+  /*END mobile layout STYLES*/
+  .location hr {
+	width: calc(18vw + 1vw); 
+	border-bottom: 1px solid;
+   }
+  @media only screen and (min-width: 900px) {
+	.location hr {display: none;}
+  }
+  .loc-column h2 {
+	font-weight: bold;
+   /* padding-bottom: 1.8rem;*/
+  }
+  .location h2, .location p {
+	vertical-align: middle;
+	padding: 2%;
+  }
+
+  /*
+  <!--SECTION LOCATION - FAIR AREA--> 
+       <div class="location fair-container">
+          <h1>Locations</h1>
+           <div class="column-wrapper">
+            <div class="loc-column">
+            <h2>Ceremony</h2>
+              <br>
+            <img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-ceremony.png" alt="wedding rings icon">
+            <p>St. Nicholas Church,<br> 2 Trinity Square, Budapest</p>
+            <hr>
+         </div>
+           <div class="loc-column">
+            <h2>Photos</h2>
+             <br>
+            <img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-photoshoot.png" alt="photomachine icon">
+            <p>Liberty Bastion<br>23 Wisdom Road, Budapest</p>
+             <hr>
+          </div>
+         <div class="loc-column">
+          <h2>Party</h2>
+           <br>
+          <img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-party.png" alt="wedding cake icon">
+          <p>Heaven Lounge<br>14 Fairy Street, Budapest</p>
+           <hr>
+           </div>
+        </div><!--end of column-wrapper-->
+       </div>
+	   */
 
 
 
