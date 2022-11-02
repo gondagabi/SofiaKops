@@ -139,7 +139,7 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .main,#main{transition:margin-left .4s}
 .modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 .modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
-.bar{width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
+.bar{width:100%;overflow:hidden}.center.bar{display:inline-block;width:auto}
 .bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
 .bar .dropdown-hover,.bar .dropdown-click{position:static;float:left}
 .bar .button{white-space:normal}
@@ -249,6 +249,7 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .padding-top-64{padding-top:64px!important}.padding-top-48{padding-top:48px!important}
 .padding-top-32{padding-top:32px!important}.padding-top-24{padding-top:24px!important}
+
 .left{float:left!important}.right{float:right!important}
 /*TRANSPARENT*/
 .button:hover{color:#000!important;background-color:#ccc!important}
@@ -263,6 +264,7 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .eighty{display: block; width: 80%}
 .seventy{display: block; width: 70%}
 .hundred{display: block; width: 100%}
+.h-hundred{height: 100%;}
 .zero-topbot{padding-top: 0;padding-bottom: 0;margin-top: 0;margin-bottom: 0;}
 /*FONTS*/
 .sofia {font-family: Sofia, cursive;} /*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">*/
@@ -270,23 +272,12 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .lobster {font-family: Lobster, serif;} /*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">*/
 .arizonia {font-family: 'Arizonia', cursive;}
 .sign {font-family: 'Arizonia', cursive; font-size: calc(1.4rem + 1vw);padding: 1rem;}
-.colored-ico{color:#884e77;font-size: 2rem;
+.color-ico{color:#884e77;}
+.indent-left{margin-left: 1rem;}
 	
-		font-family: 'Material Icons';
-		font-weight: normal;
-		font-style: normal;
-		font-size: 2rem;  /* Preferred icon size */
-		display: inline-block;
-		line-height: 1;
-		text-transform: none;
-		letter-spacing: normal;
-		word-wrap: normal;
-		white-space: nowrap;
-		direction: ltr;}
-
-
+		
 /*Google icons variable style set*/
-.material-symbols-outlined {font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48;}
+.mat-ico {font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 40;font-size: 40px;}
 
 /*
 <span class="material-symbols-outlined">diversity_1</span>
@@ -294,6 +285,29 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 <span class="material-symbols-rounded">face_4</span>
 <span class="material-symbols-rounded">local_bar</span>
 <span class="material-symbols-rounded">cake</span>
+
+<i class="fa fa-heart-o" aria-hidden="true"></i>
+<i class="fa fa-heart" aria-hidden="true"></i>
+<i class="fa fa-glass" aria-hidden="true"></i>
+
+GOOGLE ICONS
+<span class="material-icons-outlined">diversity_1</span>
+<span class="material-icons-outlined">face_4</span>
+<span class="material-icons-outlined">cake</span>
+<span class="material-icons-outlined">nightlife</span>
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 */
 
 
@@ -326,18 +340,18 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .hover-border-theme-orchid:hover {border-color:#cc6eb1 !important}
 
 /*generated color theme: tulip for Sofia*/
-.theme-l5-tulip {color:#000 !important; background-color:#fcf9fb !important}
-.theme-l4-tulip {color:#000 !important; background-color:#f4ecf1 !important}
-.theme-l3-tulip {color:#000 !important; background-color:#e9d8e4 !important}
-.theme-l2-tulip {color:#000 !important; background-color:#ddc5d6 !important}
-.theme-l1-tulip {color:#000 !important; background-color:#d2b1c8 !important}
-.theme-d1-tulip {color:#fff !important; background-color:#ba87ab !important}
+.theme-l5-tulip {color:#ba87ab !important; background-color:#f6f5f4 !important}
+.theme-l4-tulip {color:#ad719b  !important; background-color:#f6f5f4 !important}
+.theme-l3-tulip {color:#a3588b !important; background-color:#fcfcfc !important}
+.theme-l2-tulip {color:#92467b !important; background-color:#f6f5f4 !important}
+.theme-l1-tulip {color:#6b4761  !important; background-color:#f6f5f4 !important}
+.theme-d1-tulip {color:#fff !important; background-color:#d8bdd0 !important}
 .theme-d2-tulip {color:#fff !important; background-color:#ad719b !important}
 .theme-d3-tulip {color:#fff !important; background-color:#9f5b8a !important}
 .theme-d4-tulip {color:#fff !important; background-color:#884e77 !important}
 .theme-d5-tulip {color:#fff !important; background-color:#714163 !important}
 
-.theme-light-tulip {color:#000 !important; background-color:#fcf9fb !important}
+.theme-light-tulip {color:#000 !important; background-color:#e2c6d8 !important}
 .theme-dark-tulip {color:#fff !important; background-color:#714163 !important}
 .theme-action-tulip {color:#fff !important; background-color:#714163 !important}
 
@@ -345,22 +359,23 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .text-theme-tulip {color:#c79ebb !important}
 .border-theme-tulip {border-color:#c79ebb !important}
 
-.hover-nav-tulip{color: #fff !important; background-color: #714163;}
-.hover-theme-tulip:hover {color:#000 !important; background-color:#c79ebb !important}
+.hover-grey-tulip{color: #fff !important; background-color: #714163;}
+.hover-theme-tulip:hover {color:rgb(34, 31, 31) !important; background-color:#f1d9ea !important}
 .hover-text-theme-tulip:hover {color:#c79ebb !important}
 .hover-border-theme-tulip:hover {border-color:#c79ebb !important}
 
 /*generated color theme: sand for Sofia*/
 .theme-l5 {color:#000 !important; background-color:#fcfcfc !important}
-.theme-l4 {color:#000 !important; background-color:#f6f5f4 !important}
-.theme-l3 {color:#000 !important; background-color:#edeae8 !important}
-.theme-l2 {color:#000 !important; background-color:#e4e0dd !important}
-.theme-l1 {color:#000 !important; background-color:#dbd5d1 !important}
-.theme-d1 {color:#000 !important; background-color:#c0b6af !important}
+.theme-l4 {color:rgb(34, 30, 30) !important; background-color:#f6f5f4 !important}
+.theme-l3 {color:rgb(37, 32, 32) !important; background-color:#edeae8 !important}
+.theme-l2 {color:rgb(48, 43, 43) !important; background-color:#e4e0dd !important}
+.theme-l1 {color:rgb(32, 26, 26) !important; background-color:#dbd5d1 !important}
+.theme-d1 {color:rgb(26, 23, 23) !important; background-color:#c0b6af !important}
 .theme-d2 {color:#fff !important; background-color:#aea198 !important}
 .theme-d3 {color:#fff !important; background-color:#9c8d81 !important}
 .theme-d4 {color:#fff !important; background-color:#89786c !important}
 .theme-d5 {color:#fff !important; background-color:#72645a !important}
+.theme-d6 {color:#fff !important; background-color:#68615e !important}
 
 .theme-light {color:#000 !important; background-color:#fcfcfc !important}
 .theme-dark {color:#fff !important; background-color:#72645a !important}
