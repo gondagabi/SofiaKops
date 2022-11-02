@@ -352,7 +352,7 @@ material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 .border-theme-tulip {border-color:#c79ebb !important}
 
 .hover-grey-tulip{color: #fff !important; background-color: #714163;}
-.hover-theme-tulip:hover {color:rgb(22, 21, 21) !important; background-color:#f1d9ea !important}
+.hover-theme-tulip:hover {color:rgb(22, 21, 21) !important; background-color:#f8dcf0 !important}
 .hover-text-theme-tulip:hover {color:#bb64a2 !important}
 .hover-border-theme-tulip:hover {border-color:#c79ebb !important} 
 .light-tulip,.hover-light-tulip:hover,.light-tulip,.hover-light-tulip:hover{color:rgb(20, 19, 19)!important;background-color:#f5e0ed!important}
