@@ -131,7 +131,10 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
     .material-icons.md-light { color:#f7d8eb;}
     .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
-
+    @media screen (max-width: 600px){
+      .profile br {display: none;}
+    }
+    
 
 
 </style>
@@ -215,34 +218,33 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
 <!-- Container (PORTFOLIO Section) -->
 <div class=" container padding-64 theme-d6" id="portfolio">
   <h3 class="center">MY PROFILE??</h3>
+  <br>
  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="row-padding center">
-        <div class="col m3">
+        <div class="col m3 profile">
           <span class="material-icons md-light">diversity_1</span>
-          <h5>Family: indoor/outdoor</h5>
+          <h5>Family:<br>indoor/outdoor</h5>
           <p class="small">Photos even in studio or in the nature with thematic scenery?? are always marvelous</p>
         </div>
         
         <div class="col m3">
           <span class="material-icons md-light">cake</span>
-          <h5>Food photography</h5>
+          <h5>Food<br class="br-hide">photography</h5>
           <p class="small">A perfect service for restaurants to represent their dishes online</p>
         </div>
 
         <div class="col m3">
           <span class="material-icons md-light">face_4</span>
-          <h5>Portrait photography</h5>
+          <h5>Portrait<br class="br-hide"> photography</h5>
           <p class="small">Artistic photoshots is great present for your loved ones, or your business resume</p>
         </div>
 
         <div class="col m3">
           <span class="material-icons md-light">nightlife</span>
-          <h5>Event photography</h5>
+          <h5>Event<br class="br-hide">photography</h5>
           <p class="small">I take photos at any event from wedding to business conference</p>
         </div>
-
     </div>
-
   </div>
 
 
