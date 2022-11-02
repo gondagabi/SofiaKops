@@ -58,11 +58,13 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{disp
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
 a{background-color:transparent}a:active,a:hover{outline-width:0}
+/*Text format*/
 abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
 b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
 code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+/*end*/
 button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
 button,input{overflow:visible}button,select{text-transform:none}
 button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
@@ -88,7 +90,7 @@ h4 {font-weight: 200; font-size: calc(.6rem + 1vw); padding: 1rem;}
 h5{font-size: calc(.6rem + 1vw);}
 h6{font-size: calc(.5rem + 1vw);font-weight: bold;}
 
-.wide1{letter-spacing:0.6rem;}
+.wide{letter-spacing:0.6rem;}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 /*Table*/ /*.table - Container for an HTML table , .striped-striped table, .border-bordered table, .bordered-bordered lines, .centered-centered table content, .hoverable-hoverable table, .table-all-all properties set */
@@ -277,67 +279,55 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 	
 		
 /*Google icons variable style set*/
-.mat-ico {font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 40;font-size: 40px;}
+.mat-ico {font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 40;font-size: 36px;}
 
 /*
-<span class="material-symbols-outlined">diversity_1</span>
-<span class="material-symbols-rounded">settings_account_box</span>
-<span class="material-symbols-rounded">face_4</span>
-<span class="material-symbols-rounded">local_bar</span>
+Material symbols (goggle)
 <span class="material-symbols-rounded">cake</span>
-
+Awesome icons:
 <i class="fa fa-heart-o" aria-hidden="true"></i>
-<i class="fa fa-heart" aria-hidden="true"></i>
-<i class="fa fa-glass" aria-hidden="true"></i>
 
 GOOGLE ICONS
-<span class="material-icons-outlined">diversity_1</span>
-<span class="material-icons-outlined">face_4</span>
-<span class="material-icons-outlined">cake</span>
-<span class="material-icons-outlined">nightlife</span>
+<span class="material-icons">face</span>
+
 /* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+pont/material-icons.md-18 { font-size: 18px; }
+material-icons.md-24 { font-size: 24px; }
+material-icons.md-36 { font-size: 36px; }
+material-icons.md-48 { font-size: 48px; }
 
 /* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
 
 /* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-*/
+material-icons.md-light { color: rgba(255, 255, 255, 1); }
+material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: 200;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	 display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
 
-
-
-
-
-/*generated color theme: orchid for Sofia*/
-.theme-l5-orchid {color:#000 !important; background-color:#fcf6fa !important}
-.theme-l4-orchid {color:#000 !important; background-color:#f5e2f0 !important}
-.theme-l3-orchid {color:#000 !important; background-color:#ebc6e0 !important}
-.theme-l2-orchid {color:#000 !important; background-color:#e1a9d1 !important}
-.theme-l1-orchid {color:#000 !important; background-color:#d78cc2 !important}
-.theme-d1-orchid {color:#fff !important; background-color:#c458a6 !important}
-.theme-d2-orchid {color:#fff !important; background-color:#bb4299 !important}
-.theme-d3-orchid {color:#fff !important; background-color:#a43a86 !important}
-.theme-d4-orchid {color:#fff !important; background-color:#8c3173 !important}
-.theme-d5-orchid {color:#fff !important; background-color:#75295f !important}
-
-.theme-light-orchid {color:#000 !important; background-color:#fcf6fa !important}
-.theme-dark-orchid {color:#fff !important; background-color:#75295f !important}
-.theme-action-orchid {color:#fff !important; background-color:#75295f !important}
-
-.theme-orchid {color:#fff !important; background-color:#cc6eb1 !important}
-.text-theme-orchid {color:#cc6eb1 !important}
-.border-theme-orchid {border-color:#cc6eb1 !important}
-
-.hover-theme-orchid:hover {color:#fff !important; background-color:#cc6eb1 !important}
-.hover-text-theme-orchid:hover {color:#cc6eb1 !important}
-.hover-border-theme-orchid:hover {border-color:#cc6eb1 !important}
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+  
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+  
+	/* Support for IE. */
+	font-feature-settings: 'liga'; }
+  
 
 /*generated color theme: tulip for Sofia*/
 .theme-l5-tulip {color:#ba87ab !important; background-color:#f6f5f4 !important}
@@ -355,8 +345,9 @@ GOOGLE ICONS
 .theme-dark-tulip {color:#fff !important; background-color:#714163 !important}
 .theme-action-tulip {color:#fff !important; background-color:#714163 !important}
 
-.theme-tulip {color:#000 !important; background-color:#c79ebb !important}
-.text-theme-tulip {color:#c79ebb !important}
+.theme-tulip {color:rgb(26, 23, 23) !important; background-color:#d1adc6 !important}
+
+.text-theme-tulip{color: rgb(218, 184, 210);}
 .border-theme-tulip {border-color:#c79ebb !important}
 
 .hover-grey-tulip{color: #fff !important; background-color: #714163;}
@@ -479,7 +470,29 @@ GOOGLE ICONS
 .border-dark-grey,.hover-border-dark-grey:hover,.border-dark-gray,.hover-border-dark-gray:hover{border-color:#616161!important}
 .border-pale-red,.hover-border-pale-red:hover{border-color:#ffe7e7!important}.border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}.border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
+/*generated color theme: orchid for Sofia*/
+.theme-l5-orchid {color:#000 !important; background-color:#fcf6fa !important}
+.theme-l4-orchid {color:#000 !important; background-color:#f5e2f0 !important}
+.theme-l3-orchid {color:#000 !important; background-color:#ebc6e0 !important}
+.theme-l2-orchid {color:#000 !important; background-color:#e1a9d1 !important}
+.theme-l1-orchid {color:#000 !important; background-color:#d78cc2 !important}
+.theme-d1-orchid {color:#fff !important; background-color:#c458a6 !important}
+.theme-d2-orchid {color:#fff !important; background-color:#bb4299 !important}
+.theme-d3-orchid {color:#fff !important; background-color:#a43a86 !important}
+.theme-d4-orchid {color:#fff !important; background-color:#8c3173 !important}
+.theme-d5-orchid {color:#fff !important; background-color:#75295f !important}
 
+.theme-light-orchid {color:#000 !important; background-color:#fcf6fa !important}
+.theme-dark-orchid {color:#fff !important; background-color:#75295f !important}
+.theme-action-orchid {color:#fff !important; background-color:#75295f !important}
+
+.theme-orchid {color:#fff !important; background-color:#cc6eb1 !important}
+.text-theme-orchid {color:#cc6eb1 !important}
+.border-theme-orchid {border-color:#cc6eb1 !important}
+
+.hover-theme-orchid:hover {color:#fff !important; background-color:#cc6eb1 !important}
+.hover-text-theme-orchid:hover {color:#cc6eb1 !important}
+.hover-border-theme-orchid:hover {border-color:#cc6eb1 !important}
 
 
 /*THE 3 COLUMN LAYOUT*/
