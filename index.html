@@ -54,8 +54,25 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
   object-fit: cover;
   object-position: 50% 100%;
   min-height: 60%;
+  background-attachment: fixed;
   
-    }
+ }
+  #tagline {
+  text-align: center;
+  text-shadow:1px 1px #b865a0;
+  font-family: 'Josefin Slab', serif;
+  font-size: calc(1.3rem + 1vw); padding: 1rem;
+  letter-spacing:0.3rem;
+  padding: .1rem;
+  
+   }
+
+    /*@media (min-width:601px){
+      #tagline {
+        font-size: calc(1.3rem + 1vw); padding: 1rem;
+        letter-spacing: 0.6rem;
+      }} */
+
 /* Create a Parallax Effect */
 .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -69,24 +86,6 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
   background-image: url("/image/sophia-kops.webp");
   min-height: 400px;
 }
-#tagline {
-  text-align: center;
-  text-shadow:1px 1px #b865a0;
-  font-family: 'Josefin Slab', serif;
-  font-size: calc(1.3rem + 1vw); padding: 1rem;
-  letter-spacing:0.3rem;
-  padding: .1rem;
-   }
-
-    /*@media (min-width:601px){
-      #tagline {
-        font-size: calc(1.3rem + 1vw); padding: 1rem;
-        letter-spacing: 0.6rem;
-      }} */
-
-
-
-
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("/image/sophia-kops.webp");
@@ -144,10 +143,9 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
 
 <!-- Hero image with Logo Text -->
 <div id="home" class="bgimg-1 display-container opacity-min">
-  <div class="display-middle" style="white-space:nowrap;"></div>
-        <!--OPACITY ON IMAGE - MAYBE NOT-->
-       <!--<div id="hero-wrapper"><img class="bgimg-1" src="/image/hero-chichago.webp" alt="Cloud Gate"></div> -->
-        <div id="tagline" class="stretch center theme-d5 opacity-mid padding-small hundred"><span>SOFIA KOPS PHOTOGRAPH</span></div>
+  <div class="display-bottommiddle hundred" style="white-space:nowrap;">
+       <div id="tagline" class="theme-d5 opacity-min padding-small">SOFIA KOPS PHOTOGRAPH</div>
+  </div>
 </div>
 
   <!-- Container (About Section) -->
