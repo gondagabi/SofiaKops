@@ -81,14 +81,14 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 
 html,body{font-size:1rem;} html{overflow-x:hidden}
 
-html, body,h5,h6 {font-family: 'Raleway', Arial,  sans-serif;}
+html, body,h4,h5,h6 {font-family: 'Raleway', Arial,  sans-serif;}
 h1,h2,h3 {font-family: 'Josefin Slab' , serif}
 h1 {font-weight: 300; font-size: calc(1.3rem + 1vw); padding: 1rem;}
 h2 {font-weight: 200; font-size: calc(1.1rem + 1vw); padding: 1rem;}
 h3 {font-weight: 200; font-size: calc(.9rem + 1vw); padding: 1rem;}
-h4 {font-weight: 200; font-size: calc(.6rem + 1vw); padding: 1rem;}
-h5{font-size: calc(.6rem + 1vw);}
-h6{font-size: calc(.5rem + 1vw);font-weight: bold;}
+h4 {font-weight: 600; font-size: calc(.75rem + 1vw); padding: 1rem;}
+h5{font-size: calc(.7rem + 1vw);letter-spacing: .02rem;}
+h6{font-size: calc(.7rem + 1vw);font-style: italic;}
 
 .wide{letter-spacing:0.6rem;}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
@@ -330,30 +330,33 @@ material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
   
 
 /*generated color theme: tulip for Sofia*/
-.theme-l5-tulip {color:#ba87ab !important; background-color:#f6f5f4 !important}
-.theme-l4-tulip {color:#ad719b  !important; background-color:#f6f5f4 !important}
+.theme-l5-tulip {color:#f5dcec !important; background-color:#f6f5f4 !important}
+.theme-l4-tulip {color:#b887a9  !important; background-color:#f6f5f4 !important}
 .theme-l3-tulip {color:#a3588b !important; background-color:#fcfcfc !important}
 .theme-l2-tulip {color:#92467b !important; background-color:#f6f5f4 !important}
-.theme-l1-tulip {color:#6b4761  !important; background-color:#f6f5f4 !important}
+.theme-l1-tulip {color:#793967  !important; background-color:#f6f5f4 !important}
 .theme-d1-tulip {color:#fff !important; background-color:#d8bdd0 !important}
 .theme-d2-tulip {color:#fff !important; background-color:#ad719b !important}
 .theme-d3-tulip {color:#fff !important; background-color:#9f5b8a !important}
 .theme-d4-tulip {color:#fff !important; background-color:#884e77 !important}
 .theme-d5-tulip {color:#fff !important; background-color:#714163 !important}
 
-.theme-light-tulip {color:#000 !important; background-color:#e2c6d8 !important}
+.theme-light-tulip {color:rgb(24, 22, 22) !important; background-color:#f7d8eb !important}
 .theme-dark-tulip {color:#fff !important; background-color:#714163 !important}
 .theme-action-tulip {color:#fff !important; background-color:#714163 !important}
 
-.theme-tulip {color:rgb(26, 23, 23) !important; background-color:#d1adc6 !important}
+.theme-tulip {color:rgb(26, 23, 23) !important; background-color:#f3d3e9 !important}
 
-.text-theme-tulip{color: rgb(218, 184, 210);}
+.text-tulip-l1{color:#f7d8eb ;}
+.text-tulip-d1{color:#a33d86}
 .border-theme-tulip {border-color:#c79ebb !important}
 
 .hover-grey-tulip{color: #fff !important; background-color: #714163;}
-.hover-theme-tulip:hover {color:rgb(34, 31, 31) !important; background-color:#f1d9ea !important}
-.hover-text-theme-tulip:hover {color:#c79ebb !important}
-.hover-border-theme-tulip:hover {border-color:#c79ebb !important}
+.hover-theme-tulip:hover {color:rgb(22, 21, 21) !important; background-color:#f1d9ea !important}
+.hover-text-theme-tulip:hover {color:#bb64a2 !important}
+.hover-border-theme-tulip:hover {border-color:#c79ebb !important} 
+.light-tulip,.hover-light-tulip:hover,.light-tulip,.hover-light-tulip:hover{color:rgb(20, 19, 19)!important;background-color:#f5e0ed!important}
+.text-light-tulip,.hover-text-light-tulip:hover,.text-light-tulip,.hover-text-light-tulip:hover{color:#f1d9ea!important}
 
 /*generated color theme: sand for Sofia*/
 .theme-l5 {color:#000 !important; background-color:#fcfcfc !important}
