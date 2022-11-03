@@ -34,10 +34,89 @@
     h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
     
     
-    /*HELPER COLOR*/
+   
+ /*SLIDESHOW STYLE*/
+    
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(150, 39, 39);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #702525;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
 
 </style>
-
 
 
 <body>
@@ -66,187 +145,174 @@
 
 <!--SLIDESHOW-->
 
-<!-- Container for the image gallery -->
-<div class="container">
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-    <!-- Full-width images with number text -->
-    <div class="mySlides">
-      <div class="caption">Christening</div>
-        <img src="/gallery/event/311382014_503087351834577_6882494271822465225_n.jpg" style="width:100%">
-    </div>
+  <!-- Full-width images with number and caption text -->
+
+  <div class="mySlides">
+    <img src="/gallery/event/311382014_503087351834577_6882494271822465225_n.jpg" style="width:100%">
+<div class="text">Christening</div>
+</div>
+<div class="mySlides">
+   <img src="/gallery/family/269436443_294312739301717_4450926561223583057_n.jpg" style="width:100%">
+<div class="text">Xmas</div>
+</div>
+<div class="mySlides">
+     <img src="/gallery/family/269619396_294756022590722_1289949547144554699_n.jpg" style="width:100%">
+ <div class="text">Xmas</div>
+</div>
+<div class="mySlides">
+     <img src="/gallery/baby/268250719_291978129535178_7236886278125374940_n.jpg" style="width:100%">
+ <div class="text">Xmas</div>
+</div>
+<div class="mySlides">
+     <img src="/gallery/baby/280749587_381365880596402_9143001345629058511_n.jpg" style="width:100%">
+ <div class="text">Straberry season</div>
+</div>
+<div class="mySlides">
+  <img src="/gallery/baby/289277606_403425038390486_4795787603574803551_n.jpg" style="width:100%">
+  <div class="text">Summer in the field</div>
+</div>
+<div class="mySlides">
+    <img src="/gallery/baby/278136176_359441186122205_1128269743250621277_n.jpg" style="width:100%">
+    <div class="text">Eastern baby</div>
+</div>
+<div class="mySlides">
+     <img src="/gallery/baby/290434473_407079584691698_3227301620709409389_n.jpg" style="width:100%">
+     <div class="text">Little mermaid</div>
+</div>
+<div class="mySlides">
+   <img src="/gallery/baby/311462439_506204388189540_534261589118632343_n.jpg" style="width:100%">
+   <div class="text">Family</div>
+</div>
+<div class="mySlides">
+         <img src="/gallery/baby/292302364_430876342389012_594218898812262883_n.jpg" style="width:100%">
+         <div class="text">Easy Peasy Lemon</div>
+</div>
+<div class="mySlides">
+         <img src="/gallery/baby/290893973_408565901209733_788307938088766733_n.jpg" style="width:100%">
+         <div class="text">Easy Peasy Lemon</div>
+</div>
+<div class="mySlides">
+         <img src="/gallery/baby/290344757_407079551358368_465392488945328445_n.jpg" style="width:100%">
+         <div class="text">Spring Fairy</div>
+</div>
+<div class="mySlides">
+         <img src="/gallery/bday/275453803_340123454720645_3725347239032986629_n.jpg" style="width:100%">
+         <div class="text">Celebrating Birthday</div>
+</div>
+<div class="mySlides">
+         <img src="/gallery/bday/271597047_305478748185116_7704549152806656539_n.jpg" style="width:100%">
+         <div class="text">Happy Birthday</div>
+</div>
+<div class="mySlides">
+         <img src="/gallery/couple/274116799_331123972287260_4500938962953663231_n.jpg" style="width:100%">
+         <div class="text">We are in love</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/couple/274291122_331124078953916_6948000685467706818_n.jpg"style="width:100%">
+        <div class="text">Waiting</div>
+</div>
+<div class="mySlides">
+         <img src="/gallery/couple/291917016_411670864232570_8077927320345770426_n.jpg"style="width:100%">
+         <div class="text">At the riverside</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/269778618_296046732461651_3080503427253707602_n.jpg"style="width:100%">
+        <div class="text">Santa's family</div>
+</div>
+<div class="mySlides">
+         <img src="/gallery/family/269806902_296405012425823_4981309452789597053_n.jpg" style="width:100%">
+         <div class="text">???</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/273015216_322865833113074_9198641849492117845_n.jpg"style="width:100%">
+        <div class="text">We are family</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/273110081_324045012995156_7612105262264780641_n.jpg"style="width:100%">
+        <div class="text">We are family</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/273523242_325898316143159_425744959621817467_n.jpg"style="width:100%">
+        <div class="text">We are family</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/274042455_327266716006319_498114778489920506_n.jpg"style="width:100%">
+        <div class="text">We are family</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/279441268_376915301041460_348602990174645748_n.jpg"style="width:100%">
+        <div class="text">We are family</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/279549235_378342560898734_2738398120132155693_n.jpg"style="width:100%">
+        <div class="text">We are family</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/280217040_376179011115089_2669534011392816841_n.jpg"style="width:100%">
+        <div class="text">We are family</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/280771359_381081757291481_6917535270470136168_n.jpg"style="width:100%">
+        <div class="text">We are family</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/286336569_394969809236009_5315710680020089265_n.jpg"style="width:100%">
+        <div class="text">We are family</div>
+</div>
+<div class="mySlides">
+        <img src="/gallery/family/311286774_505354691607843_1392203893219623044_n.jpg"style="width:100%">
+        <div class="text">We are family</div>
+</div>
+</div>
+
+ <!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+ <span class="dot" onclick="currentSlide(1)"></span>
+ <span class="dot" onclick="currentSlide(2)"></span>
+ <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
   
-    <div class="mySlides">
-      <div class="caption">Xmas</div>
-        <img src="/gallery/family/269436443_294312739301717_4450926561223583057_n.jpg" style="width:100%">
-    </div>
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
   
-    <div class="mySlides">
-      <div class="caption">Xmas</div>
-        <img src="/gallery/family/269619396_294756022590722_1289949547144554699_n.jpg" style="width:100%">
-    </div>
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
   
-    <div class="mySlides">
-      <div class="caption">Xmas</div>
-        <img src="/gallery/baby/268250719_291978129535178_7236886278125374940_n.jpg" style="width:100%">
-    </div>
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
   
-    <div class="mySlides">
-      <div class="caption">Straberry season</div>
-        <img src="/gallery/baby/280749587_381365880596402_9143001345629058511_n.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="caption">Summer in the field</div>
-          <img src="/gallery/baby/289277606_403425038390486_4795787603574803551_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Eastern baby</div>
-          <img src="/gallery/baby/278136176_359441186122205_1128269743250621277_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Little mermaid</div>
-          <img src="/gallery/baby/290434473_407079584691698_3227301620709409389_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Family</div>
-          <img src="/gallery/baby/311462439_506204388189540_534261589118632343_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Easy Peasy Lemon</div>
-          <img src="/gallery/baby/292302364_430876342389012_594218898812262883_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Easy Peasy Lemon</div>
-          <img src="/gallery/baby/290893973_408565901209733_788307938088766733_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Spring Fairy</div>
-          <img src="/gallery/baby/290344757_407079551358368_465392488945328445_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Celebrating Birthday</div>
-          <img src="/gallery/bday/275453803_340123454720645_3725347239032986629_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Happy Birthday</div>
-          <img src="/gallery/bday/271597047_305478748185116_7704549152806656539_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are in love</div>
-          <img src="/gallery/couple/274116799_331123972287260_4500938962953663231_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Waiting</div>
-          <img src="/gallery/couple/274291122_331124078953916_6948000685467706818_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">At the riverside</div>
-          <img src="/gallery/couple/291917016_411670864232570_8077927320345770426_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Santa's family</div>
-          <img src="/gallery/family/269778618_296046732461651_3080503427253707602_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">Xmas</div>
-          <img src="/gallery/family/269806902_296405012425823_4981309452789597053_n.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are family</div>
-          <img src="/gallery/family/273015216_322865833113074_9198641849492117845_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are family</div>
-          <img src="/gallery/family/273110081_324045012995156_7612105262264780641_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are family</div>
-          <img src="/gallery/family/273523242_325898316143159_425744959621817467_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are family</div>
-          <img src="/gallery/family/274042455_327266716006319_498114778489920506_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are family</div>
-          <img src="/gallery/family/279441268_376915301041460_348602990174645748_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are family</div>
-          <img src="/gallery/family/279549235_378342560898734_2738398120132155693_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are family</div>
-          <img src="/gallery/family/280217040_376179011115089_2669534011392816841_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are family</div>
-          <img src="/gallery/family/280771359_381081757291481_6917535270470136168_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are family</div>
-          <img src="/gallery/family/286336569_394969809236009_5315710680020089265_n.jpg"style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="caption">We are family</div>
-          <img src="/gallery/family/311286774_505354691607843_1392203893219623044_n.jpg"style="width:100%">
-      </div>
-    
-      
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-    <!-- Image text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
 
 
-  
-    <!-- Thumbnail images EZ NEM FOG KELLENI SZERINTEM -->
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-      </div>
-    </div>
-  </div>
+</body>
+
+</html>
