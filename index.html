@@ -269,23 +269,23 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
         <div class="large margin-bottom">
           <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i><span class="hover-text-theme-tulip">Chicago, US</span><br>
           <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i><span class="hover-text-theme-tulip">Phone: +312-259-2729</span><br>
-          <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i><span class="hover-text-theme-tulip">Email: sofiakopsphoto@gmail.com</span><br>
-        </div>
-         <p>Swing by for a cup of <i class="fa fa-coffee text-tulip-d1 large"></i>, or leave me a note:</p>
-        <form action="/action_page.php" target="_blank">
+          <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i><span class=" button hover-theme-tulip-d" style="padding:0;margin:0;"><a href="mailto:sofiakopsphoto@gmail.com" class="no-underline">Email: sofiakopsphoto@gmail.com</a></span><br>
+       </div>
+          <p>Swing by for a cup of <i class="fa fa-coffee text-tulip-d1 large"></i>, or leave me a note:</p>
+          <form action="MAILTO:sofiakopsphoto@gmail.com" method="post" enctype="text/plain">
           <div class="row-padding" style="margin:0 -16px 8px -16px">
             <div class="half">
-              <input class="input border" type="text" placeholder="Name" required name="Name">
+              <input class="input border" type="text" name="name"  value="Name">
             </div>
             <div class="half">
-              <input class="input border" type="text" placeholder="Email" required name="Email">
+              <input class="input border" type="text" name="email" value="Email">
             </div>
           </div>
-          <input class="input border" type="text" placeholder="Message" required name="Message">
-          <button class="button theme-d3-tulip right section" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <input class="input border" type="text" name="comment" value="Message" size="50">
+          <button class="button theme-d3-tulip right section" type="submit" value="Send">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE<input type="submit">
           </button>
-        </form>
+      </form>
      </div>
   </div>
 </div>

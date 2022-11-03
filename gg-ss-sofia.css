@@ -268,6 +268,7 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .hundred{display: block; width: 100%}
 .h-hundred{height: 100%;}
 .zero-topbot{padding-top: 0;padding-bottom: 0;margin-top: 0;margin-bottom: 0;}
+.no-underline{text-decoration: none;}
 /*FONTS*/
 .sofia {font-family: Sofia, cursive;} /*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">*/
 .tangerine {font-family: Tangerine, serif;} /* <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">*/
@@ -343,7 +344,6 @@ material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 .theme-light-tulip {color:rgb(24, 22, 22) !important; background-color:#f7d8eb !important}
 .theme-dark-tulip {color:#fff !important; background-color:#714163 !important}
-.theme-action-tulip {color:#fff !important; background-color:#714163 !important}
 
 .theme-tulip {color:rgb(26, 23, 23) !important; background-color:#f3d3e9 !important}
 
@@ -353,6 +353,7 @@ material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 .hover-grey-tulip{color: #fff !important; background-color: #714163;}
 .hover-theme-tulip:hover {color:rgb(22, 21, 21) !important; background-color:#f8dcf0 !important}
+.hover-theme-tulip-d:hover{color:#fff !important; background-color:#9f5b8a !important}
 .hover-text-theme-tulip:hover {color:#bb64a2 !important}
 .hover-border-theme-tulip:hover {border-color:#c79ebb !important} 
 .light-tulip,.hover-light-tulip:hover,.light-tulip,.hover-light-tulip:hover{color:rgb(20, 19, 19)!important;background-color:#f5e0ed!important}
