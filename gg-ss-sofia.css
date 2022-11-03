@@ -79,16 +79,17 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
 
-html,body{font-size:1rem;} html{overflow-x:hidden}
+html,body{font-size: calc(1rem + 1vw);} html{overflow-x:hidden}
 
 html, body,h4,h5,h6 {font-family: 'Raleway', Arial,  sans-serif;}
 h1,h2,h3 {font-family: 'Josefin Slab' , serif}
 h1 {font-weight: 300; font-size: calc(1.3rem + 1vw); padding: 1rem;}
 h2 {font-weight: 200; font-size: calc(1.1rem + 1vw); padding: 1rem;}
 h3 {font-weight: 200; font-size: calc(.9rem + 1vw); padding: 1rem;}
-h4 {font-weight: 600; font-size: calc(.75rem + 1vw); padding: 1rem;}
-h5{font-size: calc(.7rem + 1vw);letter-spacing: .02rem;}
-h6{font-size: calc(.7rem + 1vw);font-style: italic;}
+h4 {font-weight: 600; font-size: calc(.65rem + 1vw); padding: 1rem;}
+h5{font-size: calc(.6rem + 1vw);letter-spacing: .02rem;}
+h6{font-size: calc(.6rem + 1vw);font-style: italic;}
+.p-smaller{font-size: calc(.5rem + 1vw);}
 
 .wide{letter-spacing:0.6rem;}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
