@@ -123,7 +123,7 @@ image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 /*RIPPLE - an opacity effect etc. on button*/
 .ripple:active{opacity:0.5}.ripple{transition:opacity 0s}
 /*INPUT FORM*/
-.input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.input{padding:8px;display:block;border:none;border-bottom:1px solid rgb(204, 204, 204);width:100%}
 .select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
 /*DROPDOWN*/ /*dropdown-hover-A hoverable dropdown element, dropdown-content-The dropdown part to be displayed, dropdown-click-A clickable dropdown element*/
 .dropdown-click,.dropdown-hover{position:relative;display:inline-block;cursor:pointer}/*A clickable dropdown element AND A hoverable dropdown element*/
