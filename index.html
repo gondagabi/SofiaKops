@@ -264,7 +264,7 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
         <img src="/image/city-contact.webp" class="image round" style="width:100%">
       </div>
       <div class="rest"></div>
-      <div class="col m6 l5 panel indent-left">
+      <div class="col m6 l6 panel indent-left">
         <div class="large margin-bottom">
           <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i><span class="hover-text-theme-tulip">Chicago, US</span><br>
           <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i><span class="hover-text-theme-tulip">Phone: +312-259-2729</span><br>
@@ -313,15 +313,15 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
     }
 
     // Change style of navbar on scroll
-    window.onscroll = function() {myFunction()};
-    function myFunction() {
-        var navbar = document.getElementById("myNavbar");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navbar.className = "bar" + " card" + " animate-top" + " white";
-        } else {
-            navbar.className = navbar.className.replace(" card animate-top white", "");
-        }
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "bar" + " card" + " animate-top" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" card animate-top white", "");
     }
+}
 
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
