@@ -97,10 +97,6 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
   }
 }
 
-.bg-wrapper{
-  background: url("/bg/45-degree-fabric-White-Seamless-Pattern.jpg"); /*old paper style background for light section*/
-}
-
 .material-icons {
       font-family: 'Material Icons';
       font-weight: 200;
@@ -125,9 +121,7 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
       /* Support for IE. */
       font-feature-settings: 'liga';
     }
-    .material-icons.md-light { color:#f7d8eb;}
-    .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); 
-    }
+    
 
     @media screen (max-width: 600px) {
       .profile br {display: none;
@@ -299,7 +293,10 @@ h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: 1rem;}
   <p>Powered by <a href="" title="GG" target="_blank" class="hover-text-theme-tulip">GG</a></p>
 </footer>
     
+<script src="/gg-js.js"></script>
+    
     <script>
+     
     // Modal Image Gallery
     function onClick(element) {
       document.getElementById("img01").src = element.src;
@@ -313,9 +310,9 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "bar" + " card" + "animate-top" + "white";
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" card animate-top white", "");
     }
 }
 
