@@ -66,6 +66,7 @@
         height: 100%;
         object-fit: cover;
       }
+      :root{--swiper-theme-color:#362c30}
     </style>
   </head>
 
@@ -265,14 +266,30 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 5,
-        spaceBetween: 5,
-        slidesPerGroup: 5,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+
+        breakpoints: {
+          220: {
+            slidesPerView: 1,
+          },
+          440: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 4,
+         },
+          1024: {
+            slidesPerView: 6,
+         },
+        },
+      
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
