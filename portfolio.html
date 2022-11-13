@@ -13,8 +13,18 @@
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/><!-- Link Swiper's CSS -->
 
       
-    <!-- Demo styles -->
+    
     <style>
+      .logo-mid{
+        width:60%;
+        margin-top: 30px;
+      }
+      @media only screen and (min-width: 600px) {
+    .logo-mid{width:40%;
+              margin-top: 40px;
+      }}
+
+      /*swiper*/
       html,
       body {
         position: relative;
@@ -22,8 +32,6 @@
       }
 
       body {
-        font-size: 14px;
-        color: #000;
         margin: 0;
         padding: 0;
       }
@@ -69,10 +77,10 @@
     <!-- Navbar (sit on top) -->
 <div class="top">
   <div class="bar" id="myNavbar">
-    <a class="bar-item button hover-theme-tulip hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <a class="bar-item button hover-text-theme-tulip hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="bar-item button">HOME</a>
+    <a href="#home" class="bar-item button hover-theme-tulip-d">HOME</a>
     <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i>ABOUT</a>
     <a href="#portfolio" class="bar-item button hide-small"><i class="fa fa-th"></i>PORTFOLIO</a>
     <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -86,6 +94,13 @@
     <a href="#" class="bar-item button">SEARCH</a>
   </div>
 </div>
+
+<section class="container padding-16 bg-wrapper center">
+  <div>
+    <img  class="logo-mid" src="/Logo/sofia-logo-4.2-treSymphony.png" alt="logo">
+  </div>
+   <h3> - in my memories - </h3>
+</section>
 
     <section id="Family photos">
 		<div class=" wrapper dark-wrapper">
@@ -215,6 +230,28 @@
 
   </div><!--wrapper-->
 </section><!--portrait-->  
+
+<section class="container padding-64 bg-wrapper" id="actutality">
+  <div class="center small">
+  <p>The images and content on the site are protected by copyright.</p>
+   <p>All rights reserved.</p>
+</div>
+
+
+
+</section>
+
+<!-- Footer -->
+<footer class="center theme-d6 padding-64">
+  <a href="#home" class="button light-tulip"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+  <div class="xlarge section">
+    <i class="fa fa-facebook-official hover-opacity"></i>
+    <i class="fa fa-instagram hover-opacity"></i>
+    <i class="fa fa-pinterest-p hover-opacity"></i>
+    <i class="fa fa-linkedin hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="" title="GG" target="_blank" class="hover-text-theme-tulip">GG</a></p>
+</footer>
 
 
 
