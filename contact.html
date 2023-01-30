@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Sofia Kops Photography</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!--website is designed to be responsive to mobile devices. Inital scale is sets the initial zoom level when the page is first loaded by the browser.-->
+ <!-- Load Require CSS -->
+  <link rel="stylesheet" href="css/sofia.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/parallax.css">
+ 
+  <!-- Font CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Josefin+Slab:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Quicksand:wght@300;400;600&family=Raleway:ital,wght@0,400;0,600;0,800;1,200&family=Text+Me+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Symbol CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script src="/gg-js.js"></script>
+ </head>
+
+
+ <body>
+
+    <!-- Navbar (sit on top) -->
+   <!-- Navbar (sit on top) -->
+<nav class="navbar shadow top large" style="padding-bottom:0;">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hide-medium hide-large right hover-text-light-tulip " href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+   
+    <div class="flex-fill mx-xl-4 mb-2">
+      <ul class="nav d-flex justify-content-between mx-xl-4 text-center">
+        <li>
+          <a href="index.html" class="bar-item button text-decoration-none navbar-brand"><img src="/img/sofia-logo-perfect-thick.png" style="width: 3rem; margin:0;"></a>
+        </li>
+        <li>
+          <a href="about.html" class="bar-item button hide-small text-decoration-none hover-text-light-tulip"><i class="fa fa-user"></i>ABOUT</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="bar-item button hide-small text-decoration-none hover-text-light-tulip"><i class="fa fa-th"></i>PORTFOLIO</a>
+        </li>
+        <li>
+          <a href="contact.html" class="bar-item button hide-small text-decoration-none hover-text-light-tulip"><i class="fa fa-envelope"></i> CONTACT</a>
+       </li>
+      </ul>
+  </div>
+</div>
+    
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+        <a href="about.html" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+        <a href="portfolio.html" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="contact.html" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#" class="bar-item button">SEARCH</a>
+      </div>
+    </nav>
+
+    <!-- Container ( Section) -->
+ <article class="bg-wrapper container-fluid">
+    <div class=" container">
+        <div class="content padding-32 seventy center" id="about">
+          <h2 class="center">CONTACT</h2>
+        </div>
+    <div class="content container padding-32 seventy center">
+        <h3 class="center">Hello, there!</h3>
+        <h5 class="center josefin">I photograph amazing families in Illinois around Chichago and I’d love to hear from you.</h5>
+    </div>
+ 
+
+    <!--FORM-->
+
+
+    <div class="container-fluid mt-3">
+
+      <div class="container center responsive">
+        <div class="col m6 l6 "><p><i class="fa fa-envelope"></i><a href="mailto:sofiakopsphoto@gmail.com" class="text-decoration-none dfn text-black hover-text-light-tulip josefin"> sofiakopsphoto@gmail.com</a></p></div>
+        <div class="col m6 l6"><p><i class="fa fa-instagram"></i><a href="https://www.instagram.com/sofia_k0ps/?hl=en" class="text-decoration-none dfn text-black hover-text-light-tulip josefin"> sofia_k0ps</a></p></div>
+      </div>
+    
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+
+        <div class="mt-3">
+          <label for="comment">Comments:</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+        </div>
+          <button type="submit" class="btn theme-light-tulip ">Submit</button>
+    
+      </form>
+    </div>
+
+</div>
+
+</article> 
+
+<div class="bg-wrapper padding-64" >
+  <div>
+    <img src="/img/wonder-lake-map-google-16-9.png" id="contact-map">
+  </div>
+</div>
+
+

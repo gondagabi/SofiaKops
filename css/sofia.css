@@ -1,0 +1,611 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike,  sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End CSS reset*/
+
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,
+*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+/*Text format*/
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%} large{font-size:130%} sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+/*end*/
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold;}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+
+html,body{font-size: calc(1rem + 1vw);} html{overflow-x:hidden}
+
+html, body,h4,h5,h6 {font-family: 'Raleway', Arial,  sans-serif;}
+h1,h2,h3 {font-family: 'Josefin Slab' , serif}
+h1 {font-weight: 300; font-size: calc(1.2rem + 1vw); padding: 1rem;}
+h2 {font-weight: 200; font-size: calc(1.1rem + 1vw); padding: .8rem;}
+h3 {font-weight: 200; font-size: calc(1rem + 1vw); padding: .7rem;}
+h4 {font-weight: 600; font-size: calc(.7rem + 1vw); padding: 1rem;}
+h5{font-size: calc(.6rem + 1vw);letter-spacing: .02rem;}
+h6{font-size: calc(.6rem + 1vw);font-style: italic;}
+p{font-size: calc(.55rem + 1vw);}
+.p-smaller{font-size: calc(.5rem + 1vw);}
+
+/*General rules*/
+*{box-sizing:border-box!important;}
+ html,body{width:100%;height:100%!important; overflow-x:hidden;
+    color:rgb(15, 15, 15) !important; background-color:#f6f5f4 !important;
+    font-size: calc(.6rem + 1vw);
+    line-height: 1.8;
+ }
+/*end*/
+
+.wide{letter-spacing:0.6rem;}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+/*Table*/ /*.table - Container for an HTML table , .striped-striped table, .border-bordered table, .bordered-bordered lines, .centered-centered table content, .hoverable-hoverable table, .table-all-all properties set */
+.table,.table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.table-all{border:1px solid #ccc}
+
+.bordered tr,.table-all tr{border-bottom:1px solid #ddd}.striped tbody tr:nth-child(even){background-color:#f1f1f1} /* table-all minden sorra vonatkozik<table class="table-all">*/
+.table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1} /*striped table - possible formatting odd end even format*/
+/*.hoverable tbody tr:hover,.ul.hoverable li:hover{background-color:#ccc}.centered tr th,.centered tr td{text-align:center}*/
+.table td,.table th,.table-all td,.table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.table th:first-child,.table td:first-child,.table-all th:first-child,.table-all td:first-child{padding-left:16px} /*separate the first row*/
+/*BUTTON - The most common elements to use are <input type="button">, <button>, and <a>*/ 
+      /*.btn	A rectangular button with a shadow hover effect.Default color is black.
+        .button	A rectangular button with a gray hover effect.Default color is light-gray in W3.CSS version 3.Default color is inherited from parent element in version 4.
+        .bar	A horizontal bar that can be used to group buttons together.(Perfect for horizontal navigation menus)
+        .block	Class that can be used to define a full width (100%) button.
+        .circle	Can be used to define a circular button.
+        .ripple	Can be used to create a ripple effect.*/
+.btn,.button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;
+	color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.btn,.button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.disabled,.btn:disabled,.button:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
+.btn.disabled:hover,.btn:disabled:hover{box-shadow:none}
+/*end*/
+/*badge - circle badge etc number in it*/
+.badge,.tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.badge{border-radius:50%}
+/*LIST*/
+.ul{list-style-type:none;padding:0;margin:0}.ul li{padding:8px 16px;border-bottom:1px solid #ddd}.ul li:last-child{border-bottom:none}
+/*TOOLTIP - show some text if hover on a html element*/
+.tooltip,.display-container{position:relative}.tooltip .text{display:none}.tooltip:hover .text{display:inline-block}
+/*RIPPLE - an opacity effect etc. on button*/
+.ripple:active{opacity:0.5}.ripple{transition:opacity 0s}
+/*INPUT FORM*/
+.input{padding:8px;display:block;border:none;border-bottom:1px solid rgb(204, 204, 204);width:100%}
+.select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+/*DROPDOWN*/ /*dropdown-hover-A hoverable dropdown element, dropdown-content-The dropdown part to be displayed, dropdown-click-A clickable dropdown element*/
+.dropdown-click,.dropdown-hover{position:relative;display:inline-block;cursor:pointer}/*A clickable dropdown element AND A hoverable dropdown element*/
+.dropdown-hover:hover .dropdown-content{display:block}
+.dropdown-hover:first-child,.dropdown-click:hover{background-color:#ccc;color:#000}
+.dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child{background-color:#ccc;color:#000}
+.dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1} /*The dropdown part to be displayed*/
+/*CHECKBOX, RADIOBOX*/
+.check,.radio{width:24px;height:24px;position:relative;top:6px}
+/*SIDEBARS, DROPDOWNS POSITIONING*/
+.sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.bar-block .dropdown-hover,.bar-block .dropdown-click{width:100%}
+.bar-block .dropdown-hover .dropdown-content,.bar-block .dropdown-click .dropdown-content{min-width:100%}
+.bar-block .dropdown-hover .button,.bar-block .dropdown-click .button{width:100%;text-align:left;padding:8px 16px}
+.main,#main{transition:margin-left .4s}
+.modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.bar{width:100%;overflow:hidden}.center.bar{display:inline-block;width:auto}
+.bar .bar-item{padding:8px 12px;float:left;width:auto;border:none;display:block;outline:0}
+.bar .dropdown-hover,.bar .dropdown-click{position:static;float:left}
+.bar .button{white-space:normal}
+.bar-block .bar-item{width:100%;display:block;padding:8px 12px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.bar-block.center .bar-item{text-align:center}.block{display:block;width:100%}
+/*RESPONSIVE, mobile-first grid system to handle layout*/
+.responsive{display:block;overflow-x:auto}
+/*Clear-fix*/
+.container:after,.container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before,
+.cell-row:before,.cell-row:after,.clear:after,.clear:before,.bar:before,.bar:after{content:"";display:table;clear:both}
+/*end*/
+/*CSS's grid system is responsive, and the columns will re-arrange automatically depending on the screen size:*/
+.col,.half,.third,.twothird,.threequarter,.quarter{float:left;width:100%}/*Occupies 1/2 (and ....)  of the window (on medium and large screens)*/
+.col.s1{width:8.33333%}.col.s2{width:16.66666%}.col.s3{width:24.99999%}.col.s4{width:33.33333%}/*col: Defines one column in a 12-column responsive grid*/
+.col.s5{width:41.66666%}.col.s6{width:49.99999%}.col.s7{width:58.33333%}.col.s8{width:66.66666%}
+.col.s9{width:74.99999%}.col.s10{width:83.33333%}.col.s11{width:91.66666%}.col.s12{width:99.99999%}
+@media (min-width:601px){.col.m1{width:8.33333%}.col.m2{width:16.66666%}.col.m3,.quarter{width:24.99999%}.col.m4,.third{width:33.33333%}
+.col.m5{width:41.66666%}.col.m6,.half{width:49.99999%}.col.m7{width:58.33333%}.col.m8,.twothird{width:66.66666%}
+.col.m9,.threequarter{width:74.99999%}.col.m10{width:83.33333%}.col.m11{width:91.66666%}.col.m12{width:99.99999%}}
+@media (min-width:993px){.col.l1{width:8.33333%}.col.l2{width:16.66666%}.col.l3{width:24.99999%}.col.l4{width:33.33333%}
+.col.l5{width:41.66666%}.col.l6{width:49.99999%}.col.l7{width:58.33333%}.col.l8{width:66.66666%}
+.col.l9{width:74.99999%}.col.l10{width:83.33333%}.col.l11{width:91.66666%}.col.l12{width:99.99999%}}
+.rest{overflow:hidden} /*Occupies the rest of the column width*/ 
+.stretch{margin-left:-16px;margin-right:-16px} /*The stretch class removes the right and left margins from an element. This class is often used to stretch a padded row*/
+/*end*/
+/*The responsive classes above must be placed inside a row class (or row-padding class) to be fully responsive.*/
+.content,.auto{margin-left:auto;margin-right:auto}.content{max-width:980px}.auto{max-width:1140px} /*Container for fixed size centered content*/
+/*W3.CSS Layout : cell class redefines block elements to display horizontally (like table cells):*/
+.cell{display:table-cell} /*cell class has a very nice built-in self adjusting standard. Side-by-side elements will automatically adjust to the necessary width AND height*/
+.cell-row{display:table;width:100%}  /*The cell-row is a container for cells (columns).*/
+.cell-top{vertical-align:top}.cell-middle{vertical-align:middle}.cell-bottom{vertical-align:bottom}
+/*show or hide*/
+.hide{display:none!important}.show-block,.show{display:block!important}.show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.auto{max-width:95%}}
+@media (max-width:600px){.content{display:block;width:100%}}
+@media (max-width:600px){.modal-content{margin:0 10px;width:auto!important}.modal{padding-top:30px}
+.dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}	
+.hide-small{display:none!important}/*Hides content on small screens (less than 601px)*/.mobile{display:block;width:100%!important}.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
+.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}}
+@media (max-width:768px){.modal-content{width:500px}.modal{padding-top:50px}}
+@media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important} /*Hides content on large screens (larger than 992px)*/.sidebar.collapse{display:block!important}}/*for COLLAPSIBILE SIDEBAR*/
+@media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}} /*Hides content on medium screens*/
+@media (max-width:992px){.sidebar.collapse{display:none}.main{margin-left:0!important;margin-right:0!important}.auto{max-width:100%}} /*for collapsibile SIDEBAR for responsive layout*/
+/*W3.CSS Display Classes :display-container	Container for display-classes*/
+.top,.bottom{position:fixed;width:100%;z-index:1}.top{top:0}.bottom{bottom:0}
+.overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.display-topleft{position:absolute;left:0;top:0}.display-topright{position:absolute;right:0;top:0}
+.display-bottomleft{position:absolute;left:0;bottom:0}.display-bottomright{position:absolute;right:0;bottom:0}
+.display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.display-container:hover .display-hover{display:block}.display-container:hover span.display-hover{display:inline-block}.display-hover{display:none}
+.display-position{position:absolute}
+.display-relative{position: relative} 
+/*etc. button - give rounded edge for it*/
+.circle{border-radius:50%}
+.round-small{border-radius:2px}.round,.round-medium{border-radius:4px}.round-large{border-radius:8px}.round-xlarge{border-radius:16px}.round-xxlarge{border-radius:32px}
+/*ROW vs. ROW-padding   row class defines a container with no padding, while the row-padding class adds a 8px left and right padding to each column*/
+.row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col{padding:0 8px}
+.row,.row>.half,.row>.third,.row>.twothird,.row>.threequarter,.row>.quarter,.row>.col{padding:0}
+/* .container class is the perfect class to use for all HTML container elements like: <div>, <article>, <section>, <header>, <footer>, <form>, and more. The container provides equality for all HTML container elements:*/
+.container,.panel{padding:0.01em 16px}
+.panel{margin-top:16px;margin-bottom:16px} /*he panel class adds a 16px top and bottom margin and a 16px left and right padding to any HTML element*/
+/*end*/
+.code,.codespan{font-family:Consolas,"courier new";font-size:16px} /*code class is used to display code in a readable mono-spaced font.*/
+.code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word} 
+.codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}  /*codespan class is used to highlight inline code*/
+/*card*/
+.card,.card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.card-4,.hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+/*Animation Classes*/
+.spin{animation:spin 2s infinite linear}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.animate-input{transition:width 0.4s ease-in-out}.animate-input:focus{width:100%!important}
+/*EFFECTS*/
+.opacity,.hover-opacity:hover{opacity:0.60}.opacity-off,.hover-opacity-off:hover{opacity:1}
+.opacity-max{opacity:0.25}.opacity-min{opacity:0.8} /*the original 0.75 - change to 0.8*/
+.opacity-mid{opacity:0.6}
+.greyscale-max,.grayscale-max,.hover-greyscale:hover,.hover-grayscale:hover{filter:grayscale(100%)}
+.greyscale,.grayscale{filter:grayscale(75%)}.greyscale-min,.grayscale-min{filter:grayscale(50%)}
+.sepia{filter:sepia(75%)}.sepia-max,.hover-sepia:hover{filter:sepia(100%)}.sepia-min{filter:sepia(50%)}
+/*SIZES and ALIGN*/
+/*sizes are modified by me*/
+.tiny{font-size:.4rem!important}.small{font-size:.6rem!important}.medium{font-size:.8rem!important}.large{font-size:1rem!important}
+.xlarge{font-size:1.2rem!important}.xxlarge{font-size:1.6rem!important}.xxxlarge{font-size:2.2px!important}.jumbo{font-size:64px!important}
+/*end - put the original css*/
+.left-align{text-align:left!important}.right-align{text-align:right!important}.justify{text-align:justify!important}.center{text-align:center!important}
+.border-0{border:0!important}.border{border:1px solid #ccc!important}
+.border-top{border-top:1px solid #ccc!important}.border-bottom{border-bottom:1px solid #ccc!important}
+.border-left{border-left:1px solid #ccc!important}.border-right{border-right:1px solid #ccc!important}
+.topbar{border-top:6px solid #ccc!important}.bottombar{border-bottom:6px solid #ccc!important}
+.leftbar{border-left:6px solid #ccc!important}.rightbar{border-right:6px solid #ccc!important}
+.section,.code{margin-top:16px!important;margin-bottom:16px!important}
+.margin{margin:16px!important}.margin-top{margin-top:16px!important}.margin-bottom{margin-bottom:16px!important}
+.margin-left{margin-left:16px!important}.margin-right{margin-right:16px!important}
+.padding-small{padding:.01rem .015rem!important}.padding{padding:8px 16px!important}.padding-large{padding:12px 24px!important}
+.padding-8{padding-top:8px!important;padding-bottom:8px!important}.padding-16{padding-top:16px!important;padding-bottom:16px!important}.padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.padding-32{padding-top:32px!important;padding-bottom:32px!important}.padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.padding-top-64{padding-top:64px!important}.padding-top-48{padding-top:48px!important}
+.padding-top-32{padding-top:32px!important}.padding-top-24{padding-top:24px!important}
+
+.left{float:left!important}.right{float:right!important}
+/*TRANSPARENT*/
+/*.button:hover{color:#000!important;background-color:rgb(252, 207, 228)!important;border-radius:5%;} /*SOFI SPECIFIKUS - ROUNDED*/ 
+.transparent,.hover-none:hover{background-color:transparent!important}
+.hover-none:hover{box-shadow:none!important}
+
+/*GG ADDED STYLE - IMPORTANT TO PUT THE MAIN STYLESHEET*/
+.nowrap{white-space: nowrap} /*nem engedi a sortörést - kis képernyőn sem - nem responsive*/
+.wrap{white-space:initial;}
+.leftincenter{display: inline-block; text-align: left;} /*BUT before this row must be :text-align: center */
+.display-relative{position: relative} 
+.eighty{display: block; width: 80%}
+.seventy{display: block; width: 70%}
+.hundred{display: block; width: 100%}
+.h-hundred{height: 100%;}
+.zero-topbot{padding-top: 0;padding-bottom: 0;margin-top: 0;margin-bottom: 0;}
+.no-underline{text-decoration: none;}
+/*FONTS*/
+.josefin {font-family: 'Josefin Slab' , serif}
+.sofia {font-family: Sofia, cursive;} /*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">*/
+.tangerine {font-family: Tangerine, serif;} /* <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">*/
+.lobster {font-family: Lobster, serif;} /*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">*/
+.arizonia {font-family: 'Arizonia', cursive;}
+.sign {font-family: 'Arizonia', cursive; font-size: calc(1.4rem + 1vw);padding: 1rem;}
+.color-ico{color:#884e77;}
+.indent-left{margin-left: 1rem;}
+	
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(29, 27, 29, 0.5); }
+.material-icons.md-dark.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color:#f7d8eb;}
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); 
+    }
+
+/* Rules for material icons*/
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: 200;
+	font-style: normal;
+	font-size: 48px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+  }
+  
+  @media only screen and (max-width: 600px) {
+	.profile br {display: none;
+	   }   }
+  
+	/*COLOR THEMES*/
+
+/*background wrapper*/
+
+.dark-wrapper{ /*theme-d6*/ /*USING AS BG IN PORTFOLIO*/
+		color:#fff !important; 
+		background-color:#696563 !important
+	   }
+.bg-wrapper{
+		background: url("/bg/landing-background.png") !important;  /*old paper style background for light section*/
+		}
+
+/*generated color theme: tulip for Sofia*/
+.theme-l5-tulip {color:#f5dcec !important; background-color:#f6f5f4 !important}
+.theme-l4-tulip {color:#b887a9  !important; background-color:#f6f5f4 !important}
+.theme-l3-tulip {color:#a3588b !important; background-color:#fcfcfc !important}
+.theme-l2-tulip {color:#92467b !important; background-color:#f6f5f4 !important}
+.theme-l1-tulip {color:#793967  !important; background-color:#f6f5f4 !important}
+.theme-d1-tulip {color:#fff !important; background-color:#e0bed6 !important}
+.theme-d2-tulip {color:#fff !important; background-color:#ad719b !important}
+.theme-d3-tulip {color:#fff !important; background-color:#9f5b8a !important}
+.theme-d4-tulip {color:#fff !important; background-color:#884e77 !important}
+.theme-d5-tulip {color:#fff !important; background-color:#714163 !important}
+
+.theme-light-tulip {color:rgb(24, 22, 22) !important; background-color:#ebc1d6 !important}
+.theme-dark-tulip {color:#fff !important; background-color:#714163 !important}
+
+.theme-tulip {color:rgb(26, 23, 23) !important; background-color:#f3d3e9 !important}
+
+.text-tulip-l1{color:#f7d8eb}
+.text-tulip-l2{color:#d19bbd}
+.text-tulip-d1{color:#a33d86}
+.text-tulip-d5{color:#714163}
+.text-sand-d5{color:#796f68}
+.border-theme-tulip {border-color:#c79ebb !important}
+
+.hover-grey-tulip{color: #fff !important; background-color: #714163;}
+.hover-theme-tulip:hover {color:rgb(22, 21, 21) !important; background-color:#f3dbeb !important}
+.hover-theme-tulip-d:hover{color:#fff !important; background-color:#9f5b8a !important}
+.hover-text-theme-tulip:hover {color:rgb(192, 117, 171) !important; background-color:inherit !important;}
+.hover-border-theme-tulip:hover {border-color:#c79ebb !important} 
+.light-tulip,.hover-light-tulip:hover,.light-tulip,.hover-light-tulip:hover{color:rgb(20, 19, 19)!important;background-color:#ebc1d6!important}
+.text-light-tulip,.hover-text-light-tulip:hover,.text-light-tulip,.hover-text-light-tulip:hover{color:hsl(319, 42%, 69%)!important} /*használatban*/
+.hover-text-sand:hover{color:hwb(300 29% 69%)!important} 
+
+/*generated color theme: sand for Sofia*/
+.theme-l5 {color:#000 !important; background-color:#fcfcfc !important}
+.theme-l4 {color:rgb(34, 30, 30) !important; background-color:#f6f5f4 !important}
+.theme-l3 {color:rgb(37, 32, 32) !important; background-color:#edeae8 !important}
+.theme-l2 {color:rgb(48, 43, 43) !important; background-color:#e4e0dd !important}
+.theme-l1 {color:rgb(32, 26, 26) !important; background-color:#dbd5d1 !important}
+.theme-d1 {color:rgb(26, 23, 23) !important; background-color:#c0b6af !important}
+.theme-d2 {color:#fff !important; background-color:#aca5a0 !important}
+.theme-d3 {color:#fff !important; background-color:#9c8d81 !important}
+.theme-d4 {color:#fff !important; background-color:#887d75 !important}
+.theme-d5 {color:#fff !important; background-color:#796f68 !important}
+.theme-d6 {color:#fff !important; background-color:#696563 !important}
+
+.theme-light {color:#000 !important; background-color:#fcfcfc !important}
+.theme-dark {color:#fff !important; background-color:#726a65 !important}
+.theme-action {color:#fff !important; background-color:#6e6661 !important}
+
+.theme {color:#000 !important; background-color:#d2cbc6 !important}
+.text-theme {color:#d2cbc6 !important}
+.border-theme {border-color:#d2cbc6 !important}
+
+.hover-theme:hover {color:#000 !important; background-color:#d2cbc6 !important}
+.hover-text-theme:hover {color:#d2cbc6 !important}
+.hover-border-theme:hover {border-color:#d2cbc6 !important}
+
+/*HOVER COLOR FOR SOFIA*/
+.hover-orchid-d5:hover{color:#000!important;background-color:#9f5b8a !important}
+  
+
+
+
+
+
+
+
+
+
+
+
+/* Colors */
+.amber,.hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.aqua,.hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.blue,.hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.light-blue,.hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.brown,.hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.cyan,.hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.blue-grey,.hover-blue-grey:hover,.blue-gray,.hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.green,.hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.light-green,.hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.indigo,.hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.khaki,.hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.lime,.hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.orange,.hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.deep-orange,.hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.pink,.hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.purple,.hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.deep-purple,.hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.red,.hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.sand,.hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.teal,.hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.yellow,.hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.white,.hover-white:hover{color:#000!important;background-color:#fff!important}
+.black,.hover-black:hover{color:#fff!important;background-color:#000!important}
+.grey,.hover-grey:hover,.gray,.hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.light-grey,.hover-light-grey:hover,.light-gray,.hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.dark-grey,.hover-dark-grey:hover,.dark-gray,.hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.pale-red,.hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.pale-green,.hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.pale-yellow,.hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.pale-blue,.hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.text-amber,.hover-text-amber:hover{color:#ffc107!important}
+.text-aqua,.hover-text-aqua:hover{color:#00ffff!important}
+.text-blue,.hover-text-blue:hover{color:#2196F3!important}
+.text-light-blue,.hover-text-light-blue:hover{color:#87CEEB!important}
+.text-brown,.hover-text-brown:hover{color:#795548!important}
+.text-cyan,.hover-text-cyan:hover{color:#00bcd4!important}
+.text-blue-grey,.hover-text-blue-grey:hover,.text-blue-gray,.hover-text-blue-gray:hover{color:#607d8b!important}
+.text-green,.hover-text-green:hover{color:#4CAF50!important}
+.text-light-green,.hover-text-light-green:hover{color:#8bc34a!important}
+.text-indigo,.hover-text-indigo:hover{color:#3f51b5!important}
+.text-khaki,.hover-text-khaki:hover{color:#b4aa50!important}
+.text-lime,.hover-text-lime:hover{color:#cddc39!important}
+.text-orange,.hover-text-orange:hover{color:#ff9800!important}
+.text-deep-orange,.hover-text-deep-orange:hover{color:#ff5722!important}
+.text-pink,.hover-text-pink:hover{color:#e91e63!important}
+.text-purple,.hover-text-purple:hover{color:#9c27b0!important}
+.text-deep-purple,.hover-text-deep-purple:hover{color:#673ab7!important}
+.text-red,.hover-text-red:hover{color:#f44336!important}
+.text-sand,.hover-text-sand:hover{color:#fdf5e6!important}
+.text-teal,.hover-text-teal:hover{color:#009688!important}
+.text-yellow,.hover-text-yellow:hover{color:#d2be0e!important}
+.text-white,.hover-text-white:hover{color:#fff!important}
+.text-black,.hover-text-black:hover{color:#000!important}
+.text-grey,.hover-text-grey:hover,.text-gray,.hover-text-gray:hover{color:#757575!important}
+.text-light-grey,.hover-text-light-grey:hover,.text-light-gray,.hover-text-light-gray:hover{color:#f1f1f1!important}
+.text-dark-grey,.hover-text-dark-grey:hover,.text-dark-gray,.hover-text-dark-gray:hover{color:#3a3a3a!important}
+.border-amber,.hover-border-amber:hover{border-color:#ffc107!important}
+.border-aqua,.hover-border-aqua:hover{border-color:#00ffff!important}
+.border-blue,.hover-border-blue:hover{border-color:#2196F3!important}
+.border-light-blue,.hover-border-light-blue:hover{border-color:#87CEEB!important}
+.border-brown,.hover-border-brown:hover{border-color:#795548!important}
+.border-cyan,.hover-border-cyan:hover{border-color:#00bcd4!important}
+.border-blue-grey,.hover-border-blue-grey:hover,.border-blue-gray,.hover-border-blue-gray:hover{border-color:#607d8b!important}
+.border-green,.hover-border-green:hover{border-color:#4CAF50!important}
+.border-light-green,.hover-border-light-green:hover{border-color:#8bc34a!important}
+.border-indigo,.hover-border-indigo:hover{border-color:#3f51b5!important}
+.border-khaki,.hover-border-khaki:hover{border-color:#f0e68c!important}
+.border-lime,.hover-border-lime:hover{border-color:#cddc39!important}
+.border-orange,.hover-border-orange:hover{border-color:#ff9800!important}
+.border-deep-orange,.hover-border-deep-orange:hover{border-color:#ff5722!important}
+.border-pink,.hover-border-pink:hover{border-color:#e91e63!important}
+.border-purple,.hover-border-purple:hover{border-color:#9c27b0!important}
+.border-deep-purple,.hover-border-deep-purple:hover{border-color:#673ab7!important}
+.border-red,.hover-border-red:hover{border-color:#f44336!important}
+.border-sand,.hover-border-sand:hover{border-color:#fdf5e6!important}
+.border-teal,.hover-border-teal:hover{border-color:#009688!important}
+.border-yellow,.hover-border-yellow:hover{border-color:#ffeb3b!important}
+.border-white,.hover-border-white:hover{border-color:#fff!important}
+.border-black,.hover-border-black:hover{border-color:#000!important}
+.border-grey,.hover-border-grey:hover,.border-gray,.hover-border-gray:hover{border-color:#9e9e9e!important}
+.border-light-grey,.hover-border-light-grey:hover,.border-light-gray,.hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.border-dark-grey,.hover-border-dark-grey:hover,.border-dark-gray,.hover-border-dark-gray:hover{border-color:#616161!important}
+.border-pale-red,.hover-border-pale-red:hover{border-color:#ffe7e7!important}.border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}.border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
+/*generated color theme: orchid for Sofia*/
+.theme-l5-orchid {color:#000 !important; background-color:#fcf6fa !important}
+.theme-l4-orchid {color:#000 !important; background-color:#f5e2f0 !important}
+.theme-l3-orchid {color:#000 !important; background-color:#ebc6e0 !important}
+.theme-l2-orchid {color:#000 !important; background-color:#e1a9d1 !important}
+.theme-l1-orchid {color:#000 !important; background-color:#d78cc2 !important}
+.theme-d1-orchid {color:#fff !important; background-color:#c458a6 !important}
+.theme-d2-orchid {color:#fff !important; background-color:#bb4299 !important}
+.theme-d3-orchid {color:#fff !important; background-color:#a43a86 !important}
+.theme-d4-orchid {color:#fff !important; background-color:#8c3173 !important}
+.theme-d5-orchid {color:#fff !important; background-color:#75295f !important}
+
+.theme-light-orchid {color:#000 !important; background-color:#fcf6fa !important}
+.theme-dark-orchid {color:#fff !important; background-color:#75295f !important}
+.theme-action-orchid {color:#fff !important; background-color:#75295f !important}
+
+.theme-orchid {color:#fff !important; background-color:#cc6eb1 !important}
+.text-theme-orchid {color:#cc6eb1 !important}
+.border-theme-orchid {border-color:#cc6eb1 !important}
+
+.hover-theme-orchid:hover {color:#fff !important; background-color:#cc6eb1 !important}
+.hover-text-theme-orchid:hover {color:#cc6eb1 !important}
+.hover-border-theme-orchid:hover {border-color:#cc6eb1 !important}
+
+*Google icons variable style set*/
+.mat-ico {font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 40;font-size: 36px;}
+
+/*
+Material symbols (goggle)
+<span class="material-symbols-rounded">cake</span>
+Awesome icons:
+<i class="fa fa-heart-o" aria-hidden="true"></i>
+
+GOOGLE ICONS
+<span class="material-icons">face</span>
+
+/* Rules for sizing the icon. */
+pont/material-icons.md-18 { font-size: 18px; }
+material-icons.md-24 { font-size: 24px; }
+material-icons.md-36 { font-size: 36px; }
+material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color:#f7d8eb;}
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); 
+    }
+
+
+/*.material-icons {
+	font-family: 'Material Icons';      STYLE IN GENERAL
+	font-weight: 200;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	/*display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+  
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+  
+	/* Support for IE. */
+	font-feature-settings: 'liga'; 
+
+
+
+  /*
+  <!--SECTION LOCATION - FAIR AREA--> 
+       <div class="location fair-container">
+          <h1>Locations</h1>
+           <div class="column-wrapper">
+            <div class="loc-column">
+            <h2>Ceremony</h2>
+              <br>
+            <img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-ceremony.png" alt="wedding rings icon">
+            <p>St. Nicholas Church,<br> 2 Trinity Square, Budapest</p>
+            <hr>
+         </div>
+           <div class="loc-column">
+            <h2>Photos</h2>
+             <br>
+            <img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-photoshoot.png" alt="photomachine icon">
+            <p>Liberty Bastion<br>23 Wisdom Road, Budapest</p>
+             <hr>
+          </div>
+         <div class="loc-column">
+          <h2>Party</h2>
+           <br>
+          <img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-party.png" alt="wedding cake icon">
+          <p>Heaven Lounge<br>14 Fairy Street, Budapest</p>
+           <hr>
+           </div>
+        </div><!--end of column-wrapper-->
+       </div>
+	   */
+
+
+

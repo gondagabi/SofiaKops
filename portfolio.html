@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Sofia Kops Photography</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"> <!--website is designed to be responsive to mobile devices. Inital scale is sets the initial zoom level when the page is first loaded by the browser.-->
+   <!-- Load Require CSS -->
+      <link rel="stylesheet" href="css/sofia.css">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Load SWIPER Carousel CSS -->
+      <link rel="stylesheet" href="css/swiper-bundle.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Font CSS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Josefin+Slab:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Quicksand:wght@300;400;600&family=Raleway:ital,wght@0,400;0,600;0,800;1,200&family=Text+Me+One&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Symbol CSS -->
+          
+    <script src="/gg-js.js"></script>
+   </head>
+
+           
+    <style>
+      .logo-mid{
+        width: 10rem;
+        margin-top: 30px;
+      }
+     
+      /*swiper*/
+      html,
+      body {
+        position: relative;
+        height: 50%;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        background: #fff;
+        height: 250px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      :root{--swiper-theme-color:#362c30}
+    </style>
+  </head>
+
+  <!--section-->
+
+	
+  <body>
+
+    <!-- Navbar (sit on top) -->
+<nav class="navbar shadow top large" style="padding-bottom:0;">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+   
+    <div class="flex-fill mx-xl-4 mb-2">
+      <ul class="nav d-flex justify-content-between mx-xl-4 text-center">
+        <li>
+          <a href="#home" class="bar-item button text-decoration-none navbar-brand"><img src="/img/sofia-logo-perfect-thick.png" style="width: 3rem; margin:0;"></a>
+        </li>
+        <li>
+          <a href="#about" class="bar-item button hide-small text-decoration-none"><i class="fa fa-user"></i>ABOUT</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="bar-item button hide-small text-decoration-none"><i class="fa fa-th"></i>PORTFOLIO</a>
+        </li>
+        <li>
+          <a href="#contact" class="bar-item button hide-small text-decoration-none"><i class="fa fa-envelope"></i> CONTACT</a>
+       </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="bar-item button">SEARCH</a>
+  </div>
+</nav>
+
+<!--Container of opener mid logo, light theme-->
+
+<section class="container-fluid padding-16 bg-wrapper center">
+    <div>
+      <img  class="logo-mid" src="/img/sofia-logo-perfect-thick.png" alt="logo">
+    </div>
+    <h3> - in my memories - </h3>
+</section>
+
+<!--Section of photo grid, dark theme-->
+
+<section id="Family photos">
+		<div class=" wrapper dark-wrapper">
+<h2 class="section-title center padding-64">Family photos</h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/gallery/family/273523242_325898316143159_425744959621817467_n.jpg" class="family valentine"></div>
+            <div class="swiper-slide"><img src="/gallery/family/269436443_294312739301717_4450926561223583057_n.jpg" class="family xmas"></div>
+            <div class="swiper-slide"><img src="/gallery/family/269619396_294756022590722_1289949547144554699_n.jpg" class="family xmas"></div>
+            <div class="swiper-slide"><img src="/gallery/family/269778618_296046732461651_3080503427253707602_n.jpg" class="family xmas"></div>
+            <div class="swiper-slide"><img src="gallery/family/269806902_296405012425823_4981309452789597053_n.jpg" class="family xmas"></div>
+            <div class="swiper-slide"><img src="gallery/family/269825514_296404965759161_7520561768222329132_n.jpg" class="family xmas"></div>
+            <div class="swiper-slide"><img src="gallery/family/273015216_322865833113074_9198641849492117845_n.jpg" class="family valentine"></div>
+            <div class="swiper-slide"><img src="gallery/family/273110081_324045012995156_7612105262264780641_n.jpg" class="family valentine"></div>
+            <div class="swiper-slide"><img src="gallery/family/273742272_327266752672982_3529338890468056364_n.jpg" class="family valentine"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div><!--swiper-->
+
+    </div><!--wrapper-->
+    </section><!--family-->  
+
+    <section id="Babies-kids photos">
+		<div class=" wrapper dark-wrapper">
+        <h2 class="section-title center padding-64">Babies and kids photos</h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="gallery/baby/289277606_403425038390486_4795787603574803551_n.jpg" class="baby summer"></div>
+            <div class="swiper-slide"><img src="gallery/baby/268250719_291978129535178_7236886278125374940_n.jpg" class="baby xmas"></div>
+            <div class="swiper-slide"><img src="gallery/baby/268265503_291978216201836_7148730811458888008_n.jpg" class="baby xmas"></div>
+            <div class="swiper-slide"><img src="gallery/baby/277754774_357895966276727_4410222240301490984_n.jpg" class="baby easter"></div>
+            <div class="swiper-slide"><img src="gallery/baby/277771940_357895999610057_2918412513987886105_n.jpg" class="baby easter"></div>
+            <div class="swiper-slide"><img src="gallery/bday/271597047_305478748185116_7704549152806656539_n.jpg" class="baby bday"></div>
+            <div class="swiper-slide"><img src="gallery/baby/278083472_360310902701900_3485776367342132774_n.jpg" class="baby easter"></div>
+            <div class="swiper-slide"><img src="gallery/baby/278329090_360310866035237_6424317356861637706_n.jpg" class="baby easter"></div>
+            <div class="swiper-slide"><img src="gallery/bday/275245677_340123491387308_7271989711488957590_n.jpg" class="baby bday"></div>
+            <div class="swiper-slide"><img src="gallery/baby/278216133_359441282788862_6582907333154526480_n.jpg" class="baby easter"></div>
+            <div class="swiper-slide"><img src="gallery/baby/280952916_381366023929721_722273197040277371_n.jpg" class="baby summer"></div>
+            <div class="swiper-slide"><img src="gallery/baby/282295628_382277063838617_194376795072646097_n.jpg" class="baby summer"></div>
+            <div class="swiper-slide"><img src="gallery/baby/290842202_408880891178234_471742892298972834_n.jpg" class="baby summer"></div>
+            <div class="swiper-slide"><img src="gallery/baby/308965837_487266216750024_7644537986592449222_n.jpg" class="baby helloween"></div>
+            <div class="swiper-slide"><img src="gallery/baby/290344757_407079551358368_465392488945328445_n.jpg" class="baby summer"></div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div><!--swiper-->
+
+    </div><!--wrapper-->
+    </section><!--pets-->  
+
+    <section id="pets">
+      <div class=" wrapper dark-wrapper">
+          <h2 class="section-title center padding-64">Our favorites</h2>
+  
+      <!-- Swiper -->
+      <div class="swiper mySwiper ">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="gallery/pets/278415835_360310932701897_8727002280560797013_n.jpg" class="pet"></div>
+              <div class="swiper-slide"><img src="gallery/pets/289575618_405618634837793_3835773077463351234_n.jpg" class="pet"></div>
+              <div class="swiper-slide"><img src="gallery/pets/289743026_405618598171130_3221956573560256628_n.jpg" class="pet"></div>
+              <div class="swiper-slide"><img src="gallery/pets/290119029_405618684837788_4864662274038433158_n.jpg" class="pet"></div>
+              <div class="swiper-slide"><img src="gallery/pets/291508137_410900094309647_8098887881907271416_n.jpg" class="pet"></div>
+              <div class="swiper-slide"><img src="gallery/pets/291661758_410900194309637_5845423903619690417_n.jpg" class="pet"></div>
+              <div class="swiper-slide"><img src="gallery/pets/291768285_410900240976299_7930823687603016736_n.jpg" class="pet"></div>
+               
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </div><!--swiper-->
+  
+    </div><!--wrapper-->
+  </section><!--Wedding-->  
+
+  <section id="wedding">
+    <div class=" wrapper dark-wrapper">
+        <h2 class="section-title center padding-64">Wedding</h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="gallery/wedding/298836782_455225926620720_8954078069266593878_n.jpg" class="portrait"></div>
+            <div class="swiper-slide"><img src="gallery/wedding/299361219_454539196689393_7714826142665404835_n.jpg" class="portrait"></div>
+            <div class="swiper-slide"><img src="gallery/wedding/299381976_455225806620732_8852200455060243367_n.jpg" class="portrait"></div>
+            <div class="swiper-slide"><img src="gallery/wedding/299657000_455704769906169_7632467929029174515_n.jpg" class="pet"></div>
+            <div class="swiper-slide"><img src="gallery/wedding/299705911_455225879954058_4549467502874711892_n.jpg" class="portrait"></div>
+            <div class="swiper-slide"><img src="gallery/wedding/299768389_454539240022722_4166265576245171371_n.jpg" class="portrait"></div>
+                        
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div><!--swiper-->
+
+  </div><!--wrapper-->
+</section><!--wedding-->  
+
+  
+  <section id="portrait">
+    <div class=" wrapper dark-wrapper">
+        <h2 class="section-title center padding-64">Lifestyle</h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="gallery/portrait/136459948_103015688431424_7491582859179697272_n.jpg" class="portrait"></div>
+            <div class="swiper-slide"><img src="gallery/portrait/137226492_103012391765087_3436619043715492279_n.jpg" class="portrait"></div>
+            <div class="swiper-slide"><img src="gallery/portrait/165548251_132186472181012_8391577198744425012_n.jpg" class="portrait"></div>
+            <div class="swiper-slide"><img src="gallery/portrait/received_277365423826900.jpeg" class="pet"></div>
+            <div class="swiper-slide"><img src="gallery/portrait/289444861_403798171686506_645057512143913989_n.jpg" class="portrait"></div>
+            <div class="swiper-slide"><img src="gallery/portrait/received_1187521828392867.jpeg" class="portrait"></div>
+                        
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div><!--swiper-->
+    <div class="padding-64"></div>
+
+  </div><!--wrapper-->
+</section><!--portrait section end-->  
+
+<!--Section contact-->
+  <section class="container-fluid padding-64 bg-wrapper" id="actutality" style="text-align: center;">
+      <div class="medium margin-bottom" style="display: inline-block; text-align: left;"> <!--In CENTER BUT LEFT aligned - this is a child element, the style above the parent element needed-->
+          <i class="fa fa-envelope fa-fw xlarge margin-right"></i><span class=" button" style="padding:0;margin:0;"><a href="mailto:sofiakopsphoto@gmail.com" class="text-decoration-none text-tulip-d1 dfn large">Email: sofiakopsphoto@gmail.com</a></span><br>
+          <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i><span class="hover-text-theme-tulip large">Wonder Lake, Illinois, US</span><br>
+          <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i><span class="hover-text-theme-tulip large">Phone: +312-259-2729</span><br>
+      </div>
+   </section>
+
+<!-- Footer -->
+<footer class="center theme-d6 padding-32">
+  <div class="container-fluid">
+    <a href="#home" class="button hover-text-light-tulip margin-bottom p-smaller text-decoration-none"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+      <div>
+        <img src="/img/sofia-logo-perfect-thick.png" style="max-width: 6rem;">
+      </div>
+      <div class="xlarge section">
+        <i class="fa fa-facebook-official hover-opacity"></i>
+        <i class="fa fa-instagram hover-opacity"></i>
+        <i class="fa fa-pinterest-p hover-opacity"></i>
+        <i class="fa fa-linkedin hover-opacity"></i>
+    </div>
+
+    <div class="container-fluid center">
+      <p class="small">@Copyright 2023 <span class="text-tulip-l2"> Sofia Kops-Gonda </span> All rights reserved by </p>
+      <p class="small">Powered by <span class="text-tulip-l2"> GG</a></p>
+   </div>
+
+  </footer> 
+
+
+
+<!-- Swiper JS -->
+   
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        breakpoints: {
+          220: {
+            slidesPerView: 1,
+          },
+          440: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 4,
+         },
+          1024: {
+            slidesPerView: 6,
+         },
+        },
+      
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script>
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "bar" + " card" + "animate-top" + "white";
+        } else {
+            navbar.className = navbar.className.replace(" card animate-top white", "");
+        }
+    }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("show") == -1) {
+                x.className += " show";
+            } else {
+                x.className = x.className.replace(" show", "");
+            }
+        }
+        </script>
+
+  </body>
